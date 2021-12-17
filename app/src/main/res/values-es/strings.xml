@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VisitaRD</string>
+    <string name="app_name">Visita RD</string>
     <string name="logo">Logo</string>
+    <string name="search">Buscar</string>
+    <string name="visits">Visitas</string>
 </resources>
