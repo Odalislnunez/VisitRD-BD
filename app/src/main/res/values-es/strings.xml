@@ -3,5 +3,7 @@
     <string name="app_name">Visita RD</string>
     <string name="logo">Logo</string>
     <string name="search">Buscar</string>
-    <string name="visits">Visitas</string>
+    <string name="visits">Ver Visitas</string>
+    <string name="name">Nombre del Lugar</string>
+    <string name="location">Ubicación del Lugar</string>
 </resources>

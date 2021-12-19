@@ -2,5 +2,7 @@
     <string name="app_name">Visit RD</string>
     <string name="logo">Logo</string>
     <string name="search">Search</string>
-    <string name="visits">Visits</string>
+    <string name="visits">View Visits</string>
+    <string name="name">Place Name</string>
+    <string name="location">Place Location</string>
 </resources>

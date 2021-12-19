@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/onunez/Documents/Projects Android/VisitRD/app/src/main/res/layout/activity_main.xml" value="0.35104166666666664" />
-        <entry key="..\:/Users/onunez/Documents/Projects Android/VisitRD/app/src/main/res/menu/main_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/drawable/img.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/layout/item_place.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
