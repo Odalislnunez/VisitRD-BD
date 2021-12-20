@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/tvUser"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginBottom="12dp"
@@ -19,11 +19,11 @@
 
     <TextView
         android:id="@+id/tvComment"
-        android:layout_width="383dp"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
-        android:inputType="textMultiLine"
+        android:layout_marginBottom="3dp"
         android:text="@string/comment_user"
         app:layout_constraintBottom_toTopOf="@+id/tvUser"
         app:layout_constraintStart_toStartOf="parent"
