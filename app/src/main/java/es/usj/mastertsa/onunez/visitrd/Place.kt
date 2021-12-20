@@ -1,3 +1,5 @@
 package es.usj.mastertsa.onunez.visitrd
 
-class Place (val name: String, val location: String, val image: Int)
+import java.io.Serializable
+
+class Place (val name: String, val location: String, val description: String, val images: List<Int>, val comments: List<Comment>) : Serializable

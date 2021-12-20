@@ -3,6 +3,11 @@
     <string name="logo">Logo</string>
     <string name="search">Search</string>
     <string name="visits">View Visits</string>
-    <string name="name">Place Name</string>
-    <string name="location">Place Location</string>
+    <string name="place_name">Place Name</string>
+    <string name="place_location">Place Location</string>
+    <string name="description_label">Description</string>
+    <string name="description">Description</string>
+    <string name="comments_label">Comments</string>
+    <string name="user_name">User</string>
+    <string name="comment_user">Comment</string>
 </resources>
