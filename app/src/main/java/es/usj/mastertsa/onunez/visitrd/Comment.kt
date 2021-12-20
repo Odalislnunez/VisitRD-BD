@@ -1,3 +1,5 @@
 package es.usj.mastertsa.onunez.visitrd
 
-class Comment (val user: String, val comment: String)
+import java.io.Serializable
+
+class Comment (val user: String, val comment: String) : Serializable
