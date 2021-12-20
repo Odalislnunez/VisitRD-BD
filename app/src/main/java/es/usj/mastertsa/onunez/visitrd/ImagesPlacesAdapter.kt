@@ -11,8 +11,8 @@ class ImagesPlacesAdapter (private val mContext: Context, private val imagesList
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val layout = LayoutInflater.from(mContext).inflate(R.layout.item_images_place, parent, false)
 
-        layout.ivFirst.setImageResource(imagesList[0])
-        layout.ivSecond.setImageResource(imagesList[1])
+        layout.ivF.setImageResource(imagesList[0])
+        layout.ivS.setImageResource(imagesList[1])
 
         return layout
     }
