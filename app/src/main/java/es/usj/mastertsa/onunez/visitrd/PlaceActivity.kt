@@ -2,10 +2,11 @@ package es.usj.mastertsa.onunez.visitrd
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_place.*
-import kotlinx.android.synthetic.main.activity_place.ivFirst
-import kotlinx.android.synthetic.main.item_images_place.*
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.view.View
+import androidx.cardview.widget.CardView
 
 class PlaceActivity : AppCompatActivity() {
 
@@ -16,13 +17,25 @@ class PlaceActivity : AppCompatActivity() {
         val place = intent.getSerializableExtra("place") as Place
         val adapterComment = CommentsPlacesAdapter(this, place.comments)
 
+        val ll = findViewById<View>(R.id.llImages) as LinearLayout
+
+        for (i in place.images) {
+            val containerIv = CardView(this)
+            val iv = ImageView(this)
+            iv.setImageResource(i)
+            iv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(550,550))
+            containerIv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(600,600))
+            containerIv.addView(iv)
+            ll.addView(containerIv)
+        }
+
         tvNameP.text = place.name
         tvLocationP.text = place.location
-        ivFirst.setImageResource(place.images[0])
-        ivSecond.setImageResource(place.images[1])
-        ivThird.setImageResource(place.images[2])
-        ivFourth.setImageResource(place.images[3])
-        ivFifth.setImageResource(place.images[4])
+//        ivFirst.setImageResource(place.images[0])
+//        ivSecond.setImageResource(place.images[1])
+//        ivThird.setImageResource(place.images[2])
+//        ivFourth.setImageResource(place.images[3])
+//        ivFifth.setImageResource(place.images[4])
         tvDescription.text = place.description
         lvComments.adapter = adapterComment
     }
