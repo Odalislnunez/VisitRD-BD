@@ -31,11 +31,6 @@ class PlaceActivity : AppCompatActivity() {
 
         tvNameP.text = place.name
         tvLocationP.text = place.location
-//        ivFirst.setImageResource(place.images[0])
-//        ivSecond.setImageResource(place.images[1])
-//        ivThird.setImageResource(place.images[2])
-//        ivFourth.setImageResource(place.images[3])
-//        ivFifth.setImageResource(place.images[4])
         tvDescription.text = place.description
         lvComments.adapter = adapterComment
     }
