@@ -12,4 +12,5 @@
     <string name="user_name">Usuario</string>
     <string name="comment_user">Comentario</string>
     <string name="todo">TODO</string>
+    <string name="title_activity_maps">Maps Activity</string>
 </resources>

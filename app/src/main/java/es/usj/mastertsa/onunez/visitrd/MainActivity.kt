@@ -32,10 +32,10 @@ class MainActivity : AppCompatActivity() {
 
         val firstPlace = Place("Bahía de las Aguilas", "Parque Nacional de Jaragua, Prov. Pedernales",
             "Es una bahía del mar Caribe, localizada en la parte central de la costa meridional de la isla de Santo Domingo, y considerada como la playa más cristalina del mundo.",
-            imagesBahia, commentsBahia)
+            imagesBahia, commentsBahia, "17.8405556", "-71.6541667")
         val secondPlace = Place("Monumento a los Héroes de la Restauración", "Centro de la Ciudad, Prov. Santiago",
             "Mejor conocido como el Monumento de Santiago es el monumento erigido en la ciudad de Santiago de los Caballeros para conmemorar el 100 aniversario de la independencia del país.",
-            imagesMonumento, commentsMonumento)
+            imagesMonumento, commentsMonumento,"19.455698","-70.696685")
 
         val placeList = listOf<Place>(firstPlace, secondPlace)
 
