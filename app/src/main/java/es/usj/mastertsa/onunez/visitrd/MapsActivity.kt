@@ -29,7 +29,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+//        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setContentView(R.layout.activity_maps)
         extra = intent.extras
         longitude = extra!!.getString("Longitud")
