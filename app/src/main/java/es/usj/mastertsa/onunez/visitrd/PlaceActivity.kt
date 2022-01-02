@@ -107,8 +107,8 @@ class PlaceActivity : AppCompatActivity() {
             R.id.btnVisit -> {
                 try {
                     val intent = Intent(this@PlaceActivity, MapsActivity::class.java)
-                    intent.putExtra("Longitud", lat)
-                    intent.putExtra("Latitud", lon)
+                    intent.putExtra("Longitude", lat)
+                    intent.putExtra("Latitude", lon)
                     startActivity(intent)
                 } catch (ex: Exception) {
                     Toast.makeText(this@PlaceActivity, ex.message, Toast.LENGTH_LONG).show()

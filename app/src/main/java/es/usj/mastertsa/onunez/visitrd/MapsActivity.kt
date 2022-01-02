@@ -32,8 +32,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 //        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setContentView(R.layout.activity_maps)
         extra = intent.extras
-        longitude = extra!!.getString("Longitud")
-        latitude = extra!!.getString("Latitud")
+        longitude = extra!!.getString("Longitude")
+        latitude = extra!!.getString("Latitude")
         mapAvailable()
     }
 
