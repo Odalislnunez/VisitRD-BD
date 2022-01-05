@@ -42,9 +42,7 @@ class PlaceActivity : AppCompatActivity() {
         setContentView(bindings.root)
 
         val place = intent.getSerializableExtra("place") as Place
-        val adapterComment = CommentsPlacesAdapter(this, place.comments)
-
-//        val ll = findViewById<View>(R.id.llImages) as LinearLayout
+        val adapterComment = CommentsPlacesAdapter(this, place.comments, getString(R.string.view_more))
 
         for (i in place.images) {
             val containerIv = CardView(this)

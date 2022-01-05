@@ -13,4 +13,6 @@
     <string name="user_name">Usuario</string>
     <string name="comment_user">Comentario</string>
     <string name="title_activity_maps">Maps Activity</string>
+    <string name="view_more">...ver más</string>
+    <string name="submit_rating">Submit Rating</string>
 </resources>

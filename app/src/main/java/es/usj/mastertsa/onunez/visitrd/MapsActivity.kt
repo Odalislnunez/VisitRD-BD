@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -39,9 +40,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private fun mapAvailable() {
         if (mapFragment == null) {
-            mapFragment =
-                supportFragmentManager.findFragmentById(R.id.map) as
-                        SupportMapFragment?
+            mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
             mapFragment!!.getMapAsync(this@MapsActivity)
         }
         if (mapFragment != null) {
@@ -54,20 +53,16 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val dLatitude = if(!latitude.isNullOrEmpty()) latitude?.toDouble() else 0.0
         try {
             val geoCoder = Geocoder(this, Locale.getDefault())
-            val addresses = geoCoder.getFromLocation(dLatitude!!,
-                dLongitude!!, 5)
+            val addresses = geoCoder.getFromLocation(dLatitude!!, dLongitude!!, 5)
             map = googleMap
             map!!.mapType = GoogleMap.MAP_TYPE_NORMAL
             val nuevaPosicion = LatLng(dLatitude, dLongitude)
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
-                PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
-                    Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 return
             }
             map!!.isMyLocationEnabled = true
-            map!!.moveCamera(
-                CameraUpdateFactory.newLatLngZoom(nuevaPosicion,
-                    20f))
+            map!!.moveCamera(CameraUpdateFactory.newLatLngZoom(nuevaPosicion, 20f))
             var addressCoordinates = "Sin Datos"
             if (addresses.size > 0) {
                 address = addresses[0]

@@ -12,4 +12,6 @@
     <string name="user_name">User</string>
     <string name="comment_user">Comment</string>
     <string name="title_activity_maps">Maps Activity</string>
+    <string name="view_more">...view more</string>
+    <string name="submit_rating">Submit Rating</string>
 </resources>
