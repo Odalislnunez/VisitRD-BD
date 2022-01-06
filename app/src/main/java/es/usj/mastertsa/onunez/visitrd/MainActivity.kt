@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_place.*
 import java.io.IOException
 import org.json.JSONArray
 import java.io.InputStream
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                         jsonObject.optString("name") + "\n",
                         jsonObject.optString("location") + "\n",
                         jsonObject.optString("description") + "\n",
-                        listOf<Int>(0),
+                        listOf<String>(jsonObject.optString("images")),
                         listOf<Comment>(Comment("", "")),
                         jsonObject.optString("latitude") + "\n",
                         jsonObject.optString("longitude") + "\n",

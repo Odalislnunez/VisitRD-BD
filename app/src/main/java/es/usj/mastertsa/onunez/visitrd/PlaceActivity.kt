@@ -49,7 +49,7 @@ class PlaceActivity : AppCompatActivity() {
         for (i in place.images!!) {
             val containerIv = CardView(this)
             val iv = ImageView(this)
-            iv.setImageResource(i)
+//            iv.setImageResource(i)
             iv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(550,550))
             containerIv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(600,600))
             containerIv.addView(iv)
@@ -58,6 +58,7 @@ class PlaceActivity : AppCompatActivity() {
 
         bindings.tvNameP.text = place.name
         bindings.tvLocationP.text = place.location
+        bindings.rBar.rating = place.rating.toFloat()
         bindings.tvDescription.text = place.description
         bindings.lvComments.adapter = adapterComment
         lat = place.latitude
