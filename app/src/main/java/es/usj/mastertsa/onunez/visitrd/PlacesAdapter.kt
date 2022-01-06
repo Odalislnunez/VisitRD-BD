@@ -15,7 +15,7 @@ class PlacesAdapter(private val mContext: Context, private val placeList: List<P
 
         layout.tvNamePlace.text = place.name
         layout.tvLocationPlace.text = place.location
-        layout.ivPlace.setImageResource(place.images[0])
+        place.images?.get(0)?.let { layout.ivPlace.setImageResource(it) }
 
         return layout
     }

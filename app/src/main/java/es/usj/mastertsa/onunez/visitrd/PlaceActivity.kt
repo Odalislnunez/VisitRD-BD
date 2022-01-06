@@ -42,9 +42,11 @@ class PlaceActivity : AppCompatActivity() {
         setContentView(bindings.root)
 
         val place = intent.getSerializableExtra("place") as Place
-        val adapterComment = CommentsPlacesAdapter(this, place.comments, getString(R.string.view_more))
+        val adapterComment = place.comments?.let {
+            CommentsPlacesAdapter(this, it, getString(R.string.view_more))
+        }
 
-        for (i in place.images) {
+        for (i in place.images!!) {
             val containerIv = CardView(this)
             val iv = ImageView(this)
             iv.setImageResource(i)
