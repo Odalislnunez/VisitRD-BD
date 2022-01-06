@@ -50,6 +50,16 @@ class MainActivity : AppCompatActivity() {
             e.printStackTrace()
         }
 
+        val adapter = PlacesAdapter(this, placeList)
+
+        lvMain.adapter = adapter
+
+        lvMain.setOnItemClickListener { parent, view, position, id ->
+            val intent = Intent(this, PlaceActivity::class.java)
+            intent.putExtra("place", placeList[position])
+            startActivity(intent)
+        }
+
 //        val imagesBahia = listOf<Int>(R.drawable.bahia, R.drawable.bahia2, R.drawable.bahia3, R.drawable.bahia4)
 //        val imagesMonumento = listOf<Int>(R.drawable.monumento, R.drawable.monumento2, R.drawable.monumento3, R.drawable.monumento4, R.drawable.monumento5)
 //
@@ -69,15 +79,5 @@ class MainActivity : AppCompatActivity() {
 //        val secondPlace = Place("Monumento a los Héroes de la Restauración", "Centro de la Ciudad, Prov. Santiago",
 //            "Mejor conocido como el Monumento de Santiago es el monumento erigido en la ciudad de Santiago de los Caballeros para conmemorar el 100 aniversario de la independencia del país.",
 //            imagesMonumento, commentsMonumento,"19.455698","-70.696685")
-
-        val adapter = PlacesAdapter(this, placeList)
-
-        lvMain.adapter = adapter
-
-        lvMain.setOnItemClickListener { parent, view, position, id ->
-            val intent = Intent(this, PlaceActivity::class.java)
-            intent.putExtra("place", placeList[position])
-            startActivity(intent)
-        }
     }
 }

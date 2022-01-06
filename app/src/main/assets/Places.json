@@ -1,10 +1,74 @@
 [
  {
-  "name": "Casa de Campo Resort and Villas",
-  "location": "La Romana",
-  "description": "Casa de Campo es una instalación de golf en La Romana, República Dominicana.",
-  "latitude": 18.3999984,
-  "longitude": -68.916663,
+  "name": "Cola de Pato",
+  "location": "Espaillat",
+  "description": "Cola de Pato, un lugar del que no muchas personas saben de su existencia y su exótica belleza natural, acompañada del color azul turquesa de sus aguas que te harán sentir en un verdadero paraíso.",
+  "latitude": 19.5105110814432,
+  "longitude": -70.5095624452328,
+  "rating": 4.5
+ },
+ {
+  "name": "Arroyo Grande",
+  "location": "Espaillat",
+  "description": "Arroyo Grande pertenece a Espaillat en República Dominicana. Está clasificado como: Lugar poblado (Ciudad, pueblo, villa, barrio, etc..)",
+  "latitude": 19.5745846630178,
+  "longitude": -70.4008070772739,
+  "rating": 4.8
+ },
+ {
+  "name": "Playa Macao",
+  "location": "La Altagracia",
+  "description": "Playa Macao, es una playa pública ubicada en la provincia La Altagracia en la región este de la República Dominicana.",
+  "latitude": 18.767,
+  "longitude": -68.533,
+  "rating": 4.6
+ },
+ {
+  "name": "Arena Gorda Beach",
+  "location": "La Altagracia",
+  "description": "Arena blanca, deportes acuáticos y palmeras.",
+  "latitude": 18.533333,
+  "longitude": -68.366667,
+  "rating": 4.6
+ },
+ {
+  "name": "Scape Park",
+  "location": "La Altagracia",
+  "description": "Actividades al aire libre aventureras y relajadas.",
+  "latitude": 18.4838731,
+  "longitude": -68.4410513,
+  "rating": 4.5
+ },
+ {
+  "name": "Hoyo azul",
+  "location": "La Altagracia",
+  "description": "Abrevadero azul claro para nadar.",
+  "latitude": 18.478611,
+  "longitude": -68.44139,
+  "rating": 4.7
+ },
+ {
+  "name": "Coco Bongo Punta Cana",
+  "location": "La Altagracia",
+  "description": "La vida nocturna.",
+  "latitude": 18.6352754386,
+  "longitude": -68.3952178157,
+  "rating": 4.6
+ },
+ {
+  "name": "Manati Park",
+  "location": "La Altagracia",
+  "description": "Zoológico con espectáculos de animales y delfines.",
+  "latitude": 18.689734,
+  "longitude": -68.419113,
+  "rating": 4
+ },
+ {
+  "name": "Basilica Nuestra Señora De La Altagracia",
+  "location": "La Altagracia, Higuey",
+  "description": "La Basílica Catedral Nuestra Señora de la Altagracia es una basílica y catedral menor católica romana en República Dominicana dedicada a Nuestra Señora de la Altagracia, patrona de la nación. Está en Salvaleón de Higüey.",
+  "latitude": 18.597604,
+  "longitude": -68.422965,
   "rating": 4.7
  },
  {
@@ -14,6 +78,14 @@
   "latitude": 18.666075,
   "longitude": -68.396812,
   "rating": 4.6
+ },
+ {
+  "name": "Casa de Campo Resort and Villas",
+  "location": "La Romana",
+  "description": "Casa de Campo es una instalación de golf en La Romana, República Dominicana.",
+  "latitude": 18.3999984,
+  "longitude": -68.916663,
+  "rating": 4.7
  },
  {
   "name": "Isla Catalina",
@@ -32,28 +104,60 @@
   "rating": 4.7
  },
  {
-  "name": "Playa Rincon",
-  "location": "Samaná",
-  "description": "Long Beach nombrada una de las mejores del mundo.",
-  "latitude": 19.290619,
-  "longitude": -69.251297,
-  "rating": 4.7
- },
- {
-  "name": "Cayo Levantado",
-  "location": "Samaná",
-  "description": "Cayo Levantado, es una isla en la Bahía de Samaná, ubicada en la provincia de Samaná en la región oriental de República Dominicana. Es un destino turístico muy conocido en el país. El aeropuerto más cercano, el Aeropuerto Internacional Samaná El Catey, está a 68 kilómetros de distancia.",
-  "latitude": 19.2984,
-  "longitude": -69.1994,
-  "rating": 4.7
- },
- {
-  "name": "Playa Macao",
-  "location": "La Altagracia",
-  "description": "Playa Macao, es una playa pública ubicada en la provincia La Altagracia en la región este de la República Dominicana.",
-  "latitude": 18.767,
-  "longitude": -68.533,
+  "name": "Valle Nuevo",
+  "location": "La Vega",
+  "description": "Parque nacional hogar de pájaros y flores.",
+  "latitude": 18.862093,
+  "longitude": -70.675372,
   "rating": 4.6
+ },
+ {
+  "name": "Salto Jimenoa Uno",
+  "location": "La Vega",
+  "description": "Cascada.",
+  "latitude": 19.093862,
+  "longitude": -70.593748,
+  "rating": 4.5
+ },
+ {
+  "name": "Playa Grande",
+  "location": "María Trinidad Sánchez",
+  "description": "Playa pintoresca con restaurantes adyacentes.",
+  "latitude": 19.6781891449,
+  "longitude": -70.0058323856,
+  "rating": 4.7
+ },
+ {
+  "name": "Laguna Dudú",
+  "location": "María Trinidad Sánchez",
+  "description": "Laguna azul verdosa rodeada de acantilados.",
+  "latitude": 19.5645003,
+  "longitude": -69.9075478,
+  "rating": 4.7
+ },
+ {
+  "name": "Playa Caleton",
+  "location": "María Trinidad Sánchez",
+  "description": "Es uno de los favoritos, flanqueado por una exuberante vegetación y un paisaje rocoso, algunos de ellos con rostros esculpidos de los jefes indios taínos, que le dan una sensación mística.",
+  "latitude": 19.6575,
+  "longitude": -70.0713,
+  "rating": 4.7
+ },
+ {
+  "name": "Playa Bahia de Las Aguilas",
+  "location": "Pedernales",
+  "description": "Bahía de las Águilas, es una playa de 8 km de largo a lo largo de la costa suroeste de la República Dominicana en la provincia de Pedernales cerca de la parte más al sur de la frontera con Haití.",
+  "latitude": 17.86214,
+  "longitude": -71.64557,
+  "rating": 4.8
+ },
+ {
+  "name": "Parque Nacional Jaragua",
+  "location": "Pedernales",
+  "description": "El Parque Nacional Jaragua es un parque nacional de la República Dominicana. Está ubicado en la provincia de Pedernales en el extremo suroeste de la República Dominicana.",
+  "latitude": 17.9648531268,
+  "longitude": -71.6512366255,
+  "rating": 4.7
  },
  {
   "name": "27 Waterfalls",
@@ -69,46 +173,6 @@
   "description": "Playa de arena dorada con kitesurfing.",
   "latitude": 19.773798,
   "longitude": -70.642059,
-  "rating": 4.6
- },
- {
-  "name": "Nuestra Señora de la Encarnación",
-  "location": "Santo Domingo",
-  "description": "La Catedral de Santa María la Menor en la Ciudad Colonial de Santo Domingo está dedicada a Santa María de la Encarnación. Es la catedral más antigua que aún se conserva en América, iniciada en 1514 y terminada en 1541.",
-  "latitude": 18.4727777878,
-  "longitude": -69.8838888989,
-  "rating": 4.8
- },
- {
-  "name": "Playa Bahia de Las Aguilas",
-  "location": "Pedernales",
-  "description": "Bahía de las Águilas, es una playa de 8 km de largo a lo largo de la costa suroeste de la República Dominicana en la provincia de Pedernales cerca de la parte más al sur de la frontera con Haití.",
-  "latitude": 17.86214,
-  "longitude": -71.64557,
-  "rating": 4.8
- },
- {
-  "name": "Los tres ojos",
-  "location": "Santo Domingo",
-  "description": "El Parque Nacional Tres Ojos es una cueva de piedra caliza al aire libre de 50 yardas ubicada en el parque Mirador del Este, en el municipio de Santo Domingo Este de la República Dominicana.",
-  "latitude": 18.4798,
-  "longitude": -69.8429,
-  "rating": 4.7
- },
- {
-  "name": "Alcázar de Colón",
-  "location": "Santo Domingo",
-  "description": "Alcázar de Colón, es el primer palacio español fortificado construido en América. Se encuentra en la zona colonial de la ciudad de Santo Domingo en República Dominicana, y forma parte de la Ciudad Colonial, Patrimonio de la Humanidad de la UNESCO.",
-  "latitude": 18.473164774,
-  "longitude": -69.876329828,
-  "rating": 4.7
- },
- {
-  "name": "Arena Gorda Beach",
-  "location": "La Altagracia",
-  "description": "Arena blanca, deportes acuáticos y palmeras.",
-  "latitude": 18.533333,
-  "longitude": -68.366667,
   "rating": 4.6
  },
  {
@@ -128,68 +192,12 @@
   "rating": 3.7
  },
  {
-  "name": "Scape Park",
-  "location": "La Altagracia",
-  "description": "Actividades al aire libre aventureras y relajadas.",
-  "latitude": 18.4838731,
-  "longitude": -68.4410513,
-  "rating": 4.5
- },
- {
-  "name": "Cascada Limón",
-  "location": "Samaná",
-  "description": "Cascada escénica y entorno exuberante.",
-  "latitude": 19.292288,
-  "longitude": -69.43082,
-  "rating": 4.5
- },
- {
-  "name": "Hoyo azul",
-  "location": "La Altagracia",
-  "description": "Abrevadero azul claro para nadar.",
-  "latitude": 18.478611,
-  "longitude": -68.44139,
-  "rating": 4.7
- },
- {
-  "name": "Faro a Colón",
-  "location": "Santo Domingo",
-  "description": "El Faro de Colón es un monumento mausoleo ubicado en Santo Domingo Este, República Dominicana, en homenaje a Cristóbal Colón.",
-  "latitude": 18.467,
-  "longitude": -69.867,
-  "rating": 4.3
- },
- {
   "name": "Costambar",
   "location": "Puerto Plata",
   "description": "Amber Cove es una terminal de cruceros en la provincia de Puerto Plata en la República Dominicana. La terminal incluye alojamiento y tiendas minoristas.",
   "latitude": 19.81403,
   "longitude": -70.7227036364,
   "rating": 4.5
- },
- {
-  "name": "Pico Duarte",
-  "location": "San Juan",
-  "description": "El Pico Duarte es el pico más alto de República Dominicana y de todo el Caribe. A 3.098 m sobre el nivel del mar, le da a Hispaniola la decimosexta elevación máxima más alta de cualquier isla del mundo.",
-  "latitude": 19.020499918,
-  "longitude": -70.992162698,
-  "rating": 4.6
- },
- {
-  "name": "Cayo Arena",
-  "location": "Samaná",
-  "description": "Punto de partida para bucear y hacer esnórquel.",
-  "latitude": 19.167,
-  "longitude": -69.283,
-  "rating": 5
- },
- {
-  "name": "Coco Bongo Punta Cana",
-  "location": "La Altagracia",
-  "description": "La vida nocturna.",
-  "latitude": 18.6352754386,
-  "longitude": -68.3952178157,
-  "rating": 4.6
  },
  {
   "name": "Ocean World Adventure Park",
@@ -208,12 +216,60 @@
   "rating": 4.8
  },
  {
-  "name": "Parque Colón",
-  "location": "Santo Domingo",
-  "description": "Parque Colón, es la plaza central del distrito histórico Ciudad Colonial de Santo Domingo, República Dominicana.",
-  "latitude": 18.4735236,
-  "longitude": -69.8840304,
+  "name": "Fortaleza San Felipe",
+  "location": "Puerto Plata",
+  "description": "Fortaleza San Felipe es una histórica fortaleza española ubicada en el norte de República Dominicana en la provincia de Puerto Plata.",
+  "latitude": 19.8044673953,
+  "longitude": -70.695503097,
+  "rating": 4.6
+ },
+ {
+  "name": "Teleferico de Puerto Plata",
+  "location": "Puerto Plata",
+  "description": "Teleférico de la década de 1970 con vistas a la montaña.",
+  "latitude": 19.7883997822,
+  "longitude": -70.7102969621,
   "rating": 4.7
+ },
+ {
+  "name": "Playa Rincon",
+  "location": "Samaná",
+  "description": "Long Beach nombrada una de las mejores del mundo.",
+  "latitude": 19.290619,
+  "longitude": -69.251297,
+  "rating": 4.7
+ },
+ {
+  "name": "Cayo Levantado",
+  "location": "Samaná",
+  "description": "Cayo Levantado, es una isla en la Bahía de Samaná, ubicada en la provincia de Samaná en la región oriental de República Dominicana. Es un destino turístico muy conocido en el país. El aeropuerto más cercano, el Aeropuerto Internacional Samaná El Catey, está a 68 kilómetros de distancia.",
+  "latitude": 19.2984,
+  "longitude": -69.1994,
+  "rating": 4.7
+ },
+ {
+  "name": "Cascada Limón",
+  "location": "Samaná",
+  "description": "Cascada escénica y entorno exuberante.",
+  "latitude": 19.292288,
+  "longitude": -69.43082,
+  "rating": 4.5
+ },
+ {
+  "name": "Cayo Arena",
+  "location": "Samaná",
+  "description": "Punto de partida para bucear y hacer esnórquel.",
+  "latitude": 19.167,
+  "longitude": -69.283,
+  "rating": 5
+ },
+ {
+  "name": "Pico Duarte",
+  "location": "San Juan",
+  "description": "El Pico Duarte es el pico más alto de República Dominicana y de todo el Caribe. A 3.098 m sobre el nivel del mar, le da a Hispaniola la decimosexta elevación máxima más alta de cualquier isla del mundo.",
+  "latitude": 19.020499918,
+  "longitude": -70.992162698,
+  "rating": 4.6
  },
  {
   "name": "Parque Nacional Cueva de las Maravillas",
@@ -222,6 +278,70 @@
   "latitude": 18.44112,
   "longitude": -69.3069,
   "rating": 4.6
+ },
+ {
+  "name": "Monumento a los Héroes de la Restauración",
+  "location": "Santiago",
+  "description": "El Monumento a los Héroes de la Restauración es un monumento en la ciudad de Santiago de los Caballeros en República Dominicana. Es el edificio más alto de Santiago y uno de los principales atractivos turísticos de la zona.",
+  "latitude": 19.452404,
+  "longitude": -70.693502,
+  "rating": 4.8
+ },
+ {
+  "name": "Centro Cultural Eduardo León Jimenes",
+  "location": "Santiago",
+  "description": "Museo moderno de arte, ecología e historia.",
+  "latitude": 19.4631285687,
+  "longitude": -70.6747033302,
+  "rating": 4.8
+ },
+ {
+  "name": "Parque Nacional Jose Armando Bermúdez",
+  "location": "Santiago",
+  "description": "El Parque Nacional José Armando Bermúdez es un Parque Nacional de la República Dominicana que se extiende por las laderas norte y porciones centrales de la Cordillera Central.",
+  "latitude": 19.1758974,
+  "longitude": -71.0499485,
+  "rating": 4.6
+ },
+ {
+  "name": "Nuestra Señora de la Encarnación",
+  "location": "Santo Domingo",
+  "description": "La Catedral de Santa María la Menor en la Ciudad Colonial de Santo Domingo está dedicada a Santa María de la Encarnación. Es la catedral más antigua que aún se conserva en América, iniciada en 1514 y terminada en 1541.",
+  "latitude": 18.4727777878,
+  "longitude": -69.8838888989,
+  "rating": 4.8
+ },
+ {
+  "name": "Los tres ojos",
+  "location": "Santo Domingo",
+  "description": "El Parque Nacional Tres Ojos es una cueva de piedra caliza al aire libre de 50 yardas ubicada en el parque Mirador del Este, en el municipio de Santo Domingo Este de la República Dominicana.",
+  "latitude": 18.4798,
+  "longitude": -69.8429,
+  "rating": 4.7
+ },
+ {
+  "name": "Alcázar de Colón",
+  "location": "Santo Domingo",
+  "description": "Alcázar de Colón, es el primer palacio español fortificado construido en América. Se encuentra en la zona colonial de la ciudad de Santo Domingo en República Dominicana, y forma parte de la Ciudad Colonial, Patrimonio de la Humanidad de la UNESCO.",
+  "latitude": 18.473164774,
+  "longitude": -69.876329828,
+  "rating": 4.7
+ },
+ {
+  "name": "Faro a Colón",
+  "location": "Santo Domingo",
+  "description": "El Faro de Colón es un monumento mausoleo ubicado en Santo Domingo Este, República Dominicana, en homenaje a Cristóbal Colón.",
+  "latitude": 18.467,
+  "longitude": -69.867,
+  "rating": 4.3
+ },
+ {
+  "name": "Parque Colón",
+  "location": "Santo Domingo",
+  "description": "Parque Colón, es la plaza central del distrito histórico Ciudad Colonial de Santo Domingo, República Dominicana.",
+  "latitude": 18.4735236,
+  "longitude": -69.8840304,
+  "rating": 4.7
  },
  {
   "name": "Playa Boca Chica",
@@ -240,100 +360,12 @@
   "rating": 4.6
  },
  {
-  "name": "Fortaleza San Felipe",
-  "location": "Puerto Plata",
-  "description": "Fortaleza San Felipe es una histórica fortaleza española ubicada en el norte de República Dominicana en la provincia de Puerto Plata.",
-  "latitude": 19.8044673953,
-  "longitude": -70.695503097,
-  "rating": 4.6
- },
- {
-  "name": "Manati Park",
-  "location": "La Altagracia",
-  "description": "Zoológico con espectáculos de animales y delfines.",
-  "latitude": 18.689734,
-  "longitude": -68.419113,
-  "rating": 4
- },
- {
-  "name": "Playa Grande",
-  "location": "María Trinidad Sánchez",
-  "description": "Playa pintoresca con restaurantes adyacentes.",
-  "latitude": 19.6781891449,
-  "longitude": -70.0058323856,
-  "rating": 4.7
- },
- {
-  "name": "Basilica Nuestra Señora De La Altagracia",
-  "location": "La Altagracia, Higuey",
-  "description": "La Basílica Catedral Nuestra Señora de la Altagracia es una basílica y catedral menor católica romana en República Dominicana dedicada a Nuestra Señora de la Altagracia, patrona de la nación. Está en Salvaleón de Higüey.",
-  "latitude": 18.597604,
-  "longitude": -68.422965,
-  "rating": 4.7
- },
- {
   "name": "Jardín Botánico Nacional Doctor Rafael María Moscoso",
   "location": "Santo Domingo",
   "description": "Dr. Rafael Ma. El Jardín Botánico Nacional Moscoso es un jardín botánico en el corazón de Santo Domingo. El parque fue fundado en 1976 y lleva el nombre de Rafael Maria Moscoso, un botánico dominicano que catalogó la flora de la isla Hispaniola.",
   "latitude": 18.4905457519,
   "longitude": -69.9578133676,
   "rating": 4.7
- },
- {
-  "name": "Monumento a los Héroes de la Restauración",
-  "location": "Santiago",
-  "description": "El Monumento a los Héroes de la Restauración es un monumento en la ciudad de Santiago de los Caballeros en República Dominicana. Es el edificio más alto de Santiago y uno de los principales atractivos turísticos de la zona.",
-  "latitude": 19.452404,
-  "longitude": -70.693502,
-  "rating": 4.8
- },
- {
-  "name": "Laguna Dudú",
-  "location": "María Trinidad Sánchez",
-  "description": "Laguna azul verdosa rodeada de acantilados.",
-  "latitude": 19.5645003,
-  "longitude": -69.9075478,
-  "rating": 4.7
- },
- {
-  "name": "Teleferico de Puerto Plata",
-  "location": "Puerto Plata",
-  "description": "Teleférico de la década de 1970 con vistas a la montaña.",
-  "latitude": 19.7883997822,
-  "longitude": -70.7102969621,
-  "rating": 4.7
- },
- {
-  "name": "Centro Cultural Eduardo León Jimenes",
-  "location": "Santiago",
-  "description": "Museo moderno de arte, ecología e historia.",
-  "latitude": 19.4631285687,
-  "longitude": -70.6747033302,
-  "rating": 4.8
- },
- {
-  "name": "Parque Nacional Jaragua",
-  "location": "Pedernales",
-  "description": "El Parque Nacional Jaragua es un parque nacional de la República Dominicana. Está ubicado en la provincia de Pedernales en el extremo suroeste de la República Dominicana.",
-  "latitude": 17.9648531268,
-  "longitude": -71.6512366255,
-  "rating": 4.7
- },
- {
-  "name": "Valle Nuevo",
-  "location": "La Vega",
-  "description": "Parque nacional hogar de pájaros y flores.",
-  "latitude": 18.862093,
-  "longitude": -70.675372,
-  "rating": 4.6
- },
- {
-  "name": "Salto Jimenoa Uno",
-  "location": "La Vega",
-  "description": "Cascada.",
-  "latitude": 19.093862,
-  "longitude": -70.593748,
-  "rating": 4.5
  },
  {
   "name": "Panteón de la Patria",
@@ -360,43 +392,11 @@
   "rating": 4
  },
  {
-  "name": "Parque Nacional Jose Armando Bermúdez",
-  "location": "Santiago",
-  "description": "El Parque Nacional José Armando Bermúdez es un Parque Nacional de la República Dominicana que se extiende por las laderas norte y porciones centrales de la Cordillera Central.",
-  "latitude": 19.1758974,
-  "longitude": -71.0499485,
-  "rating": 4.6
- },
- {
   "name": "Monasterio de San Francisco",
   "location": "Santo Domingo",
   "description": "El Monasterio de San Francisco en Santo Domingo de Guzmán, República Dominicana, es un monasterio que fue construido entre 1509-1560, con la llegada de los padres franciscanos.",
   "latitude": 18.4772289403885,
   "longitude": -69.8864106441761,
   "rating": 0
- },
- {
-  "name": "Playa Caleton",
-  "location": "María Trinidad Sánchez",
-  "description": "Es uno de los favoritos, flanqueado por una exuberante vegetación y un paisaje rocoso, algunos de ellos con rostros esculpidos de los jefes indios taínos, que le dan una sensación mística.",
-  "latitude": 19.6575,
-  "longitude": -70.0713,
-  "rating": 4.7
- },
- {
-  "name": "Cola de Pato",
-  "location": "Espaillat",
-  "description": "Cola de Pato, un lugar del que no muchas personas saben de su existencia y su exótica belleza natural, acompañada del color azul turquesa de sus aguas que te harán sentir en un verdadero paraíso.",
-  "latitude": 19.5105110814432,
-  "longitude": -70.5095624452328,
-  "rating": 4.5
- },
- {
-  "name": "Arroyo Grande",
-  "location": "Espaillat",
-  "description": "Arroyo Grande pertenece a Espaillat en República Dominicana. Está clasificado como: Lugar poblado (Ciudad, pueblo, villa, barrio, etc..)",
-  "latitude": 19.5745846630178,
-  "longitude": -70.4008070772739,
-  "rating": 4.8
  }
 ]

@@ -4,4 +4,5 @@ import java.io.Serializable
 
 class Place(
     val name: String, val location: String, val description: String, val images: List<Int>, val comments: List<Comment>?,
-    val latitude: String, val longitude: String, val rating: Double?) : Serializable
+    val latitude: String, val longitude: String, val rating: Double
+) : Serializable

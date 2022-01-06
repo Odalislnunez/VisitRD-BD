@@ -70,7 +70,7 @@
                 android:layout_height="42dp"
                 android:layout_marginStart="95dp"
                 android:indeterminate="false"
-                android:isIndicator="false"
+                android:isIndicator="true"
                 android:numStars="5"
                 android:scaleX=".7"
                 android:scaleY=".7"

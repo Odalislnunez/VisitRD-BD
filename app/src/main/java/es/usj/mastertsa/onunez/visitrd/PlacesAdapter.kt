@@ -16,6 +16,7 @@ class PlacesAdapter(private val mContext: Context, private val placeList: List<P
         layout.tvNamePlace.text = place.name
         layout.tvLocationPlace.text = place.location
         place.images?.get(0)?.let { layout.ivPlace.setImageResource(it) }
+        layout.rBPlace.rating = place.rating!!.toFloat()
 
         return layout
     }
