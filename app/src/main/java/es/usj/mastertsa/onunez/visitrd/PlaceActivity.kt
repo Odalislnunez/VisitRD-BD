@@ -19,7 +19,9 @@ import android.view.Window
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
+import com.bumptech.glide.Glide
 import es.usj.mastertsa.onunez.visitrd.databinding.ActivityPlaceBinding
+import kotlinx.android.synthetic.main.item_place.view.*
 
 class PlaceActivity : AppCompatActivity() {
     private var lat: String = "40.4167754"
@@ -46,10 +48,13 @@ class PlaceActivity : AppCompatActivity() {
             CommentsPlacesAdapter(this, it, getString(R.string.view_more))
         }
 
-        for (i in place.images!!) {
+        for (i in place.images!![0].split(",")) {
             val containerIv = CardView(this)
             val iv = ImageView(this)
-//            iv.setImageResource(i)
+
+            Glide.with(this).load(i.replace("[","").replace("\\","").replace("\"",""))
+                .into(iv)
+
             iv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(550,550))
             containerIv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(600,600))
             containerIv.addView(iv)
