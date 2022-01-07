@@ -3,6 +3,9 @@ package es.usj.mastertsa.onunez.visitrd
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
+import android.widget.SearchView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.item_place.*
@@ -13,10 +16,26 @@ import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
     private val placeList = ArrayList<Place>()
+    private var adapter: PlacesAdapter? = null
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
-        return true
+
+        val search = menu?.findItem(R.string.search)
+        val searchView = search?.actionView as SearchView
+        searchView.queryHint = R.string.search.toString()
+
+        searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                adapter?.filter?.filter(newText)
+                return true
+            }
+        })
+        return super.onCreateOptionsMenu(menu)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             e.printStackTrace()
         }
 
-        val adapter = PlacesAdapter(this, placeList)
+        adapter = PlacesAdapter(this, placeList)
 
         lvMain.adapter = adapter
 
