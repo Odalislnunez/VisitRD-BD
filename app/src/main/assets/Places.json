@@ -12,7 +12,7 @@
      "https://alejateconale.com/wp-content/uploads/2020/05/IMG_20190620_133012-scaled.jpg",
      "https://i.ytimg.com/vi/dPDRZPYpHKc/maxresdefault.jpg"
  ],
-  "comments": ""
+  "comments": "https://www.alltrails.com/trail/dominican-republic/azua/sendero-cola-de-pato"
  },
  {
   "name": "Arroyo Grande",
@@ -257,14 +257,12 @@
   "longitude": -70.0713,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://s3.amazonaws.com/cdn.conectate-new.com/wp-content/uploads/2017/12/29025705/Playa-Caleton-RD.jpg",
+   "https://s3.amazonaws.com/cdn.conectate-new.com/wp-content/uploads/2017/08/27144055/Playa-Caleton-2.jpg",
+   "https://imgs-akamai.mnstatic.com/38/94/3894d241f04aa770fb11ca7725be0d06.jpg",
+   "https://kerjimtours.com/wp-content/uploads/2019/01/Playa-Caleto%CC%81n-Ri%CC%81o-San-Juan.-Provincia-Maria-Trinidad-Sanchez..jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Playa+Caleton,+56000&ludocid=11523214726088517904&lsig=AB86z5X8I68m7EpJrPFfU1iMeKNn&ved=0CBoQ9aIFahgKEwiA1YaHxp71AhUAAAAAHQAAAAAQogE&hl=en-DO&gl=do#lrd=0x8eae14a0568f6f09:0x9feaaebda30e6910,1"
  },
  {
   "name": "Playa Bahia de Las Aguilas",
@@ -274,14 +272,12 @@
   "longitude": -71.64557,
   "rating": 4.8,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://www.godominicanrepublic.com/wp-content/uploads/2017/12/rmp3-bahi-a-de-las-a-guilas.-pedernales.jpg",
+   "http://www.godominicanrepublic.com/wp-content/uploads/2017/12/bahia-de-las-aguilas-pedernales.jpg",
+   "https://lacosmopolilla.com/wp-content/uploads/2020/06/Playa-de-Bah%C3%ADa-de-las-%C3%81guilas.jpg",
+   "https://www.colonialtours.com/images/1bahiadelasaguilas1.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Playa+Bahia+de+Las+Aguilas&ludocid=15863047386604471025&lsig=AB86z5VHghs9pDYnUh6HKtTbNXyF&ved=0CBsQ9aIFahcKEwjAiN-D4571AhUAAAAAHQAAAAAQaw&hl=en-DO&gl=do#lrd=0x8ebbcbdaa2a43c13:0xdc24dd8d55bf82f1,1"
  },
  {
   "name": "Parque Nacional Jaragua",
@@ -291,14 +287,10 @@
   "longitude": -71.6512366255,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://images.visitarepublicadominicana.org/Parque-Nacional-Jaragua-Laguna-Oviedo.jpg",
+   "http://www.godominicanrepublic.com/wp-content/uploads/2018/03/bahi-a-de-las-aguilas_8.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Jaragua+National+Park,+84000&ludocid=3072612952363796821&lsig=AB86z5Wotk0hCKYZf8iqWC9gwGW-&ved=0CBsQ9aIFahcKEwigtPG56J71AhUAAAAAHQAAAAAQag&hl=en-DO&gl=do#lrd=0x8ebbb6be435e9671:0x2aa41d3365e88955,1"
  },
  {
   "name": "27 Waterfalls",
@@ -308,14 +300,12 @@
   "longitude": -70.8191692,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/11/d8/6e.jpg",
+   "https://sea-horse-ranch.com/new/wp-content/uploads/2017/01/27-waterfalls-dominicanrepublic.jpg",
+   "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/2c/62/61.jpg",
+   "http://www.godominicanrepublic.com/wp-content/uploads/2014/08/damajagua-puerto-plata5.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=27+Waterfalls,+Damajagua+57000&ludocid=15849155321337419089&lsig=AB86z5Xuy-cndR6UPMArQgC2hXKF&ved=0CCIQ9aIFahcKEwigtPG56J71AhUAAAAAHQAAAAAQbg&hl=en-DO&gl=do#lrd=0x8eb194ae6bdc128b:0xdbf382cad64f1551,1"
  },
  {
   "name": "Playa Dorada",
@@ -325,14 +315,13 @@
   "longitude": -70.642059,
   "rating": 4.6,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://images.visitarepublicadominicana.org/playa-dorada-puerto-plata.jpg",
+   "https://www.grandparadiseplayadorada.com/images/gallery/gallery-3.jpg",
+   "https://www.arecoa.com/wp-content/uploads/2021/06/Grand-Paradise-Playa-Dorada1.jpg",
+   "https://z.cdrst.com/foto/hotel-sf/b2ce/granderesp/emotions-by-hodelpa-playa-dorada-exterior-c5b4120.jpg",
+   "https://www.grandparadiseplayadorada.com/images/gallery/gallery-1.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Playa+Dorada,+57000&ludocid=9959552924258212546&lsig=AB86z5UVNtTNdGra75-oDmgdG473&ved=0CBQQ9aIFahcKEwigtPG56J71AhUAAAAAHQAAAAAQcg&hl=en-DO&gl=do#lrd=0x8eb1ef9e3d04ad2d:0x8a37709ddc1d1ac2,1"
  },
  {
   "name": "Sosua Beach",
@@ -342,14 +331,11 @@
   "longitude": -70.511702728,
   "rating": 4.6,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://marysoltours.net/wp-content/uploads/2019/07/sosua-snorkeling-012_rsz-1200x700_c.jpg",
+   "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/73/f0/16.jpg",
+   "http://www.godominicanrepublic.com/wp-content/uploads/2017/12/playa-sosua-puerto-plata2.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Sosua+Beach,+57000&ludocid=15689489765228651347&lsig=AB86z5V1hk80lY-Ga3FOQTYVjeYz&ved=0CBoQ9aIFahcKEwigtPG56J71AhUAAAAAHQAAAAAQdQ&hl=en-DO&gl=do#lrd=0x8eb1e3785e87d5b7:0xd9bc43d0a394a353,1"
  },
  {
   "name": "Casa Marina Beach",
@@ -359,14 +345,12 @@
   "longitude": -70.5175603408,
   "rating": 3.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://www.amhsamarina.com/uploads/9/8/6/9/98696408/cpf-7864_orig.jpg",
+   "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/27/7a/95/casa-marina-reef.jpg?w=900&h=-1&s=1",
+   "https://exp.cdn-hotels.com/hotels/1000000/700000/691500/691426/6ae7e5a8_z.jpg?impolicy=fcrop&w=500&h=333&q=medium",
+   "https://cdn.logitravel.com/wsimgresize/resize/830/650/s3-eu-west-1.amazonaws.com/logs3euw1cdn/cloudcontent/fotos/agregadorHotelero/0000/10919/10919/19.jpg?f=15605592"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Casa+Marina+Beach,+57000&ludocid=1296962752146571562&lsig=AB86z5VohV_w3T_iX1CTf2ACjnaA&ved=0CCMQ9aIFahcKEwigtPG56J71AhUAAAAAHQAAAAAQeQ&hl=en-DO&gl=do#lrd=0x8eb1e37b2c320381:0x11ffbcc0609c012a,1"
  },
  {
   "name": "Costambar",
@@ -376,12 +360,9 @@
   "longitude": -70.7227036364,
   "rating": 4.5,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://a0.muscache.com/im/pictures/bc6823b7-027c-4b12-b341-86539d8f7206.jpg?im_w=480",
+   "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/31/41/3141422_v1.jpeg",
+   "https://cf.bstatic.com/xdata/images/hotel/max1280x900/28869639.jpg?k=aff883120524b0423653ecf17551fef7c3d416cee5a9a8f884cd3b024308a5a3&o=&hp=1"
   ],
   "comments": ""
  },
@@ -393,14 +374,12 @@
   "longitude": -70.729768,
   "rating": 4.6,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "http://www.oceanworld.net/esp/assets/uploads/slides/1283x616/95471-2.jpg",
+   "https://www.godominicanrepublic.com/wp-content/uploads/2017/12/aerial.jpg",
+   "https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/Ocean_World_Adventure_Park.jpg",
+   "https://media-cdn.tripadvisor.com/media/photo-s/0b/5e/a6/39/ocean-world-adventure.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Ocean+World+Adventure+Park,+Puerto+Plata,+Dominican+Republic.,+Calle+Principal+%233,+Cofresi+Beach+Cofresi+Beach,+Puerto+Plata+57000&ludocid=2562959591297308059&lsig=AB86z5WFaqqWaxrdWvRxo1I2tPnH&ved=0CCUQ9aIFahcKEwigtPG56J71AhUAAAAAHQAAAAAQfA&hl=en-DO&gl=do#lrd=0x8eb1f208318e3cb1:0x2391762b4cf4d59b,1"
  },
  {
   "name": "Kite Beach",
@@ -410,12 +389,9 @@
   "longitude": -70.410556,
   "rating": 4.8,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://www.planetware.com/photos-large/DOM/dominican-republic-kiteboarding-blue-kite.jpg",
+   "https://www.planetware.com/photos-large/DOM/dominican-republic-kiteboarding-kite-beach.jpg",
+   "https://cabaretekitepoint.com/wp-content/uploads/2019/09/kitesurfing-cabarete1-1024x576.jpg"
   ],
   "comments": ""
  },
@@ -427,14 +403,12 @@
   "longitude": -70.695503097,
   "rating": 4.6,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://www.puertoplataclick.com/es/wp-content/uploads/2018/06/Fortaleza-San-Felipe.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/2/24/FortalezaPOP.jpg",
+   "https://todorepublicadominicana.com/wp-content/uploads/2020/06/fuerte-san-felipe-fortaleza-lugares-a-visitar-lugar-sitios-estructura-militar-guia-colonial-puerto-plata-republica-dominicana.jpg",
+   "https://www.rdturismo.es/wp-content/uploads/fortaleza-san-felipe-puerto-plata.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Fortress+of+San+Felipe,+Av.+Gral.+Gregorio+Luper%C3%B3n,+Puerto+Plata+57000&ludocid=5835700100704856047&lsig=AB86z5WxWe8nzUyyBf2_pB6HzZeR&ved=0CB0Q9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQgAE&hl=en-DO&gl=do#lrd=0x8eb1ee15d307d8cb:0x50fc92529e3967ef,1"
  },
  {
   "name": "Teleferico de Puerto Plata",
@@ -444,14 +418,13 @@
   "longitude": -70.7102969621,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://storage.googleapis.com/mmc-elcaribe-bucket/uploads/2021/09/71529b90-86f60732-teleferico-de-puerto-plata-159-6155e96a4ecf8.jpg",
+   "https://www.arecoa.com/wp-content/uploads/2021/05/3Banner-Teleferico-Puerto-Plata-Abr21.jpg",
+   "https://imgs-akamai.mnstatic.com/d4/43/d443e168bb411fee8cb039d3fde296d0.jpg",
+   "https://vivedominicana.com/wp-content/uploads/2020/07/Teleferico-de-Puerto-Plata-2.jpg",
+   "https://www.notigraficas.com/wp-content/uploads/2019/02/5f688ebd-teleferico-de-puerto-plata-19.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=The+Cable+Car+Puerto+Plata,+C.+del+Telef%C3%A9rico,+Puerto+Plata+57000&ludocid=1438367111492894706&lsig=AB86z5VbCNHWO4dUbi_0EUA6BmrG&ved=0CBoQ9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQhAE&hl=en-DO&gl=do#lrd=0x8eb1ee7a1042d7d1:0x13f61b4461237ff2,1"
  },
  {
   "name": "Playa Rincon",
@@ -461,14 +434,12 @@
   "longitude": -69.251297,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://images.visitarepublicadominicana.org/Playa-Rincon-Republica-Dominicana.jpg",
+   "https://images.visitarepublicadominicana.org/playa-rincon-samana.jpg",
+   "https://stayhappyrd.com/wp-content/uploads/2021/03/Parque-Nacional-Los-Haitises-%E2%80%93-Playa-Rincon-SAMANA-Tour-Excursion-1357x905px-STAYHAPPYRD-1.jpg",
+   "http://www.cascadalimonsamana.com/wp-content/uploads/2015/02/rincon-e1452611801847.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Playa+Rincon,+32000&ludocid=8191784229422544768&lsig=AB86z5WH_gx3mqltJVB3ff5WwRQj&ved=0CBoQ9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQhwE&hl=en-DO&gl=do#lrd=0x8eaedd2cb39932f7:0x71af105acf60b780,1"
  },
  {
   "name": "Cayo Levantado",
@@ -478,14 +449,11 @@
   "longitude": -69.1994,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://www.godominicanrepublic.com/wp-content/uploads/2018/02/cayo-levantado.jpg",
+   "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/18/62/186271_v4.jpeg",
+   "https://www.godominicanrepublic.com/wp-content/uploads/2017/11/CAYO-LEVANTADO.jpg?x41638"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Cayo+Levantado,+32000&ludocid=4495955967039803955&lsig=AB86z5Wgcub2zh7DcTGktksTJmRU&ved=0CBsQ9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQigE&hl=en-DO&gl=do#lrd=0x8eaede2e2058cc69:0x3e64d821a5349233,1"
  },
  {
   "name": "Cascada Limón",
@@ -495,14 +463,12 @@
   "longitude": -69.43082,
   "rating": 4.5,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://cdn2.civitatis.com/republica-dominicana/samana/galeria/cascada-limon.jpg",
+   "https://imgs-akamai.mnstatic.com/cb/06/cb06354cea0ecaed7f628dee5424e7b2.jpg",
+   "https://media-cdn.tripadvisor.com/media/photo-s/1a/5a/d2/a4/caption.jpg",
+   "https://omviajesyrelatos.com/wp-content/uploads/2021/12/salto.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Cascada+Lim%C3%B3n,+32000&ludocid=14910810511809106655&lsig=AB86z5UaLQ5njqdUqlQkE-8C0s6o&ved=0CBoQ9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQjQE&hl=en-DO&gl=do#lrd=0x8eaee51d7640de39:0xceedd728dd8ad2df,1"
  },
  {
   "name": "Cayo Arena",
@@ -512,12 +478,10 @@
   "longitude": -69.283,
   "rating": 5,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://www.godominicanrepublic.com/wp-content/uploads/2017/12/rmp7-cayo-arena.-puerto-plata.jpg",
+   "https://cdn2.civitatis.com/republica-dominicana/puerto-plata/galeria/header/cayo-arena-republica-dominicana.jpg",
+   "https://todorepublicadominicana.com/wp-content/uploads/2019/01/excursion-cayo-arena-cayo-paraiso-puerto-plata-punta-rucia-lugares-que-ver-hacer-donde-ir-visitar-guia-manglares-montecristi-de-todo-republica-dominicana6-1024x366.jpg",
+   "https://www.puertoplataclick.com/es/wp-content/uploads/2019/08/cayo-arena-paradise.jpg"
   ],
   "comments": ""
  },
@@ -529,14 +493,11 @@
   "longitude": -70.992162698,
   "rating": 4.6,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "http://www.godominicanrepublic.com/wp-content/uploads/2018/03/pico-duarte-xl.jpg",
+   "https://usercontent.one/wp/republicadominicana.lavozdelsocio.com/wp-content/uploads/2019/02/Pico-Duarte.jpg",
+   "http://picoduartetours.com/wp-content/uploads/2019/10/IMG_2434-750x500.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Pico+Duarte&ludocid=17684833487253629246&lsig=AB86z5UrrVMuZGtOY_nV7lab-3p9&ved=0CBgQ9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQlgE&hl=en-DO&gl=do#lrd=0x8eb0435268a743b1:0xf56d265bbfaf693e,1"
  },
  {
   "name": "Parque Nacional Cueva de las Maravillas",
@@ -546,14 +507,11 @@
   "longitude": -69.3069,
   "rating": 4.6,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://www.rdturismo.es/wp-content/uploads/cueva-de-las-maravillas-1024x576.jpg",
+   "http://www.godominicanrepublic.com/wp-content/uploads/2017/12/cueva_maravillas.jpg",
+   "https://images.visitarepublicadominicana.org/Cueva-del-las-Marvillas-Republica-Dominicana.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Cave+of+Wonders,+Carretera+La+Romana+-+San+Pedro+de+Macoris+-+KM+16,+Autov%C3%ADa+del+Este&ludocid=8157757420163735421&lsig=AB86z5XFXL1IvKZHMQu2LxA5ciTv&ved=0CB0Q9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQmwE&hl=en-DO&gl=do#lrd=0x8eaf59edcff0d33b:0x71362d26e8aa9f7d,1"
  },
  {
   "name": "Monumento a los Héroes de la Restauración",
@@ -563,14 +521,12 @@
   "longitude": -70.693502,
   "rating": 4.8,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://storage.googleapis.com/mmc-elcaribe-bucket/uploads/2018/08/c8ee51ec-monumento-a-los-heroes-de-la-restauracion-er-3.jpg",
+   "https://europadigital.es/wp-content/uploads/2020/05/Monumento-he%CC%81roes-restauracio%CC%81n-Repu%CC%81blica-Dominicana.jpg",
+   "https://images.visitarepublicadominicana.org/Monumento-a-los-Heroes-de-la-Restauracion-Santiago-de-los-Caballeros.jpg",
+   "https://i.pinimg.com/564x/17/d9/3e/17d93e7e68280975a0d0df503027109e.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Monument+to+the+Heroes+of+the+Restoration,+Daniel+Espinal,+Santiago+De+Los+Caballeros+51000&ludocid=2228770624417075739&lsig=AB86z5ULgg0D6gIpDYFtbZuFZay0&ved=0CCAQ9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQnwE&hl=en-DO&gl=do#lrd=0x8eb1cf5ddf76a483:0x1eee2f130a34921b,1"
  },
  {
   "name": "Centro Cultural Eduardo León Jimenes",
@@ -580,14 +536,11 @@
   "longitude": -70.6747033302,
   "rating": 4.8,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://eldinero.com.do/wp-content/uploads/centro-leon.jpg",
+   "https://ssl.c.photoshelter.com/img-get/I0000ATyyjwC5A18/s/1000?1421069260.jpg",
+   "https://media-cdn.tripadvisor.com/media/photo-s/0a/f9/ad/29/el-manglar-en-la-exposicion.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Centro+Cultural+Eduardo+Le%C3%B3n+Jimenes,+Av.+27+de+Febrero+146,+Santiago+De+Los+Caballeros+51053&ludocid=14487203390092790183&lsig=AB86z5W3qYSbFJpWiWQU5GNAN313&ved=0CCYQ9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQowE&hl=en-DO&gl=do#lrd=0x8eb1c582eca3ebc1:0xc90ce2ba0f50c9a7,1"
  },
  {
   "name": "Parque Nacional Jose Armando Bermúdez",
@@ -597,14 +550,12 @@
   "longitude": -71.0499485,
   "rating": 4.6,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://0d53a35ccf6c1b73db42-2ab649be0a06e8d138dbd96e3457e3f2.ssl.cf2.rackcdn.com/303789-4.jpg",
+   "https://i.bssl.es/porconocer/2016/04/parque-nacional-republica-dominicana-2.jpg",
+   "https://suelocaribe.com/wp-content/uploads/2020/11/Parque-Nacional-Jose-Armando-Berm%C3%BAdez.jpg",
+   "https://fh-sites.imgix.net/sites/3808/2018/04/19230217/jose-armando-bermudez-national-park-bop-places-best-of-punta-cana-things-to-do-dominican-republic-weekend-eco-tourism.png?auto=compress%2Cformat&w=1000&h=1000&fit=max"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=5XG2%2B923+Parque+Nacional+Jose+Armando+Berm%C3%BAdez,+Sabaneta&ludocid=675729390692073316&lsig=AB86z5UQBuG2FhrY_FvdN8yZUWTG&ved=0CB4Q9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQpgE&hl=en-DO&gl=do#lrd=0x8eb050cae1ea3ea3:0x960ac4cf87dff64,1"
  },
  {
   "name": "Nuestra Señora de la Encarnación",
@@ -614,14 +565,10 @@
   "longitude": -69.8838888989,
   "rating": 4.8,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://dzml36iuy3mdi.cloudfront.net/ss/66629e1a-b6ec-47dd-8302-035fe7aa5f54.jpg",
+   "https://www.airfrance.com.uy/UY/common/common/img/tbaf/news/SDQ/catedral-nuestra-senora-de-la-encarnacion-un-heritage-du-passe/SDQ-catedral-nuestra-senora-de-la-encarnacion-un-heritage-du-passe-1_1-1024x1024.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Nuestra+Se%C3%B1ora+de+la+Encarnaci%C3%B3n,+Cj%C3%B3n.+de+los+Curas,+Santo+Domingo+10210&ludocid=6441420195267405876&lsig=AB86z5Vq8NLUqkxplOsNKKCJOFhH&ved=0CB0Q9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQqQE&hl=en-DO&gl=do#lrd=0x8eaf883d86818287:0x5964858a1bf0e834,1"
  },
  {
   "name": "Los tres ojos",
@@ -631,14 +578,12 @@
   "longitude": -69.8429,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://upload.wikimedia.org/wikipedia/commons/a/a7/LosTresOjos.JPG",
+   "https://www.godominicanrepublic.com/wp-content/uploads/2017/12/phoca_thumb_l_lostresojos-santodomingo2.jpg?x41638",
+   "https://nosvamosdepaseo.com/wp-content/uploads/2020/04/parque-nacional-los-tres-ojos-santo-domingo-blog-01-1024x542.jpg",
+   "https://travelandleisure.mx/wp-content/uploads/2018/08/Tres-Ojos-4_opt.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=The+Three+Eyes,+Santo+Domingo+Este+11604&ludocid=8235065995701380126&lsig=AB86z5UPlMTBTbMFHG08DEqrxo-a&ved=0CBsQ9aIFahgKEwigtPG56J71AhUAAAAAHQAAAAAQrQE&hl=en-DO&gl=do#lrd=0x8eaf87c3cf499937:0x7248d4e44fade41e,1"
  },
  {
   "name": "Alcázar de Colón",
@@ -648,14 +593,12 @@
   "longitude": -69.876329828,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://images.visitarepublicadominicana.org/Alcazar-de-Colon-Santo-Domingo.jpg",
+   "https://www.dominicanaenlaweb.com/wp-content/uploads/2020/03/Alcazar-de-Colon.jpg",
+   "https://turismodominicano.org/wp-content/uploads/2020/03/colon.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/8/8f/Santo_Domingo_-_Alcazar_de_Colon_02.JPG"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/travel/things-to-do/see-all?g2lb=2503771%2C4401769%2C4624411%2C4641139%2C4605861%2C2503781%2C2502548%2C4597339%2C4419364%2C4680143%2C4371334%2C4258168%2C4596364%2C4677860%2C4688539%2C4306835%2C4649665%2C4640247%2C4689850%2C4270442%2C4317915%2C4284970%2C4291517%2C4270859&hl=en-DO&gl=do&ssta=1&dest_mid=%2Fm%2F027rn&dest_state_type=sattd&dest_src=ts&q=lugares%20turisticos%20de%20republica%20dominicana&sa=X&ved=2ahUKEwi70LGM1Jr1AhWYRzABHUReAqYQuL0BegQIBRA4#ttdm=18.430091_-69.104030_8&ttdmf=%252Fm%252F04n5skk"
  },
  {
   "name": "Faro a Colón",
@@ -665,14 +608,12 @@
   "longitude": -69.867,
   "rating": 4.3,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://diariolibre.blob.core.windows.net.optimalcdn.com/images/binrepository/image_content_10387963_20180801203932.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/b/ba/Santo_Domingo.El_Faro_a_Col%C3%B3n.20170402.jpg",
+   "https://images.visitarepublicadominicana.org/faro-a-colon-santo-domingo.jpg",
+   "https://photo620x400.mnstatic.com/6c55674a26a5a92ad402321d4749970c/faro-a-colon.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Columbus+Lighthouse,+Av+Mirador+del+Este,+Santo+Domingo+Este+11604&ludocid=384147136915546907&lsig=AB86z5XjcX5XnGUnntqhXuwIPO9L&ved=0CBsQ9aIFahcKEwiY8_bbgp_1AhUAAAAAHQAAAAAQag&hl=en-DO&gl=do#lrd=0x8eaf880cc92d29e7:0x554c3c92555a31b,1"
  },
  {
   "name": "Parque Colón",
@@ -682,14 +623,11 @@
   "longitude": -69.8840304,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://upload.wikimedia.org/wikipedia/commons/6/6d/CCSD_Parque_Colon_RD_02_2017_1903.jpg",
+   "https://images.visitarepublicadominicana.org/Parque-Colon-Santo-Domingo.jpg",
+   "https://s3.amazonaws.com/cdn.conectate-new.com/wp-content/uploads/2017/12/18142305/Parque-Colon-RD.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Columbus+Park,+C.+Isabel+La+Cat%C3%B3lica,+Santo+Domingo+10210&ludocid=12820120814163660749&lsig=AB86z5Vr3532T081Ld1p_OCJhIha&ved=0CB0Q9aIFahcKEwiY8_bbgp_1AhUAAAAAHQAAAAAQbg&hl=en-DO&gl=do#lrd=0x8eaf883d8c160d6d:0xb1ea37f4e1d10fcd,1"
  },
  {
   "name": "Playa Boca Chica",
@@ -699,14 +637,11 @@
   "longitude": -69.612413,
   "rating": 4.2,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://images.visitarepublicadominicana.org/playa-boca-chica-santo-domingo.jpg",
+   "https://images.visitarepublicadominicana.org/playa-boca-chica-republica-dominicana.jpg",
+   "https://todorepublicadominicana.com/wp-content/uploads/2017/09/playa-boca-chica-municipio-de-la-provincia-santo-domingo-todo-rep%C3%BAblica-dominicana-2.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Playa+Boca+Chica&ludocid=8579203064191112195&lsig=AB86z5WubfobQynqMm6lthHWtF2s&ved=0CBoQ9aIFahcKEwiY8_bbgp_1AhUAAAAAHQAAAAAQcg&hl=en-DO&gl=do#lrd=0x8eaf7e33e4143429:0x770f73bb790dd403,1"
  },
  {
   "name": "Fortaleza Ozama",
@@ -716,14 +651,11 @@
   "longitude": -69.8824727258,
   "rating": 4.6,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://upload.wikimedia.org/wikipedia/commons/3/39/Fortaleza_Ozama_RD_11_2017_6495.jpg",
+   "https://images.visitarepublicadominicana.org/fortaleza-ozama-santo-domingo.jpg",
+   "https://s3.amazonaws.com/cdn.conectate-new.com/wp-content/uploads/2017/12/18033456/Fortaleza-Ozama-RD1.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Fortaleza+Ozama,+C.+Las+Damas+1,+Santo+Domingo+10210&ludocid=1285256676501036531&lsig=AB86z5UUcaDiuKNRtbLYieis4BqM&ved=0CBgQ9aIFahcKEwiY8_bbgp_1AhUAAAAAHQAAAAAQdw&hl=en-DO&gl=do#lrd=0x8eaf88164ae484c7:0x11d62623400b1df3,1"
  },
  {
   "name": "Jardín Botánico Nacional Doctor Rafael María Moscoso",
@@ -733,14 +665,11 @@
   "longitude": -69.9578133676,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://s3.amazonaws.com/cdn.conectate-new.com/wp-content/uploads/2017/03/17013852/Jardin-Botanico-Nacional-RD4.jpg",
+   "https://unpaseoporsantodomingo.files.wordpress.com/2020/02/img_8558.jpg?w=640",
+   "https://s3.amazonaws.com/cdn.conectate-new.com/wp-content/uploads/2017/03/17013849/Jardin-Botanico-Nacional-RD3.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Jard%C3%ADn+Bot%C3%A1nico+Nacional+Doctor+Rafael+Mar%C3%ADa+Moscoso,+Av+Rep%C3%BAblica+de+Colombia,+Santo+Domingo&ludocid=10445292465273089092&lsig=AB86z5WL-oZkXOKhZE3K6fOjChH5&ved=0CCAQ9aIFahcKEwiY8_bbgp_1AhUAAAAAHQAAAAAQew&hl=en-DO&gl=do#lrd=0x8eaf8a1bebffffff:0x90f52227d7aaac44,1"
  },
  {
   "name": "Panteón de la Patria",
@@ -750,12 +679,9 @@
   "longitude": -69.8836910761533,
   "rating": 4.7,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://s3.amazonaws.com/cdn.conectate-new.com/wp-content/uploads/2017/08/15142034/Panteon-Nacional-8.jpg",
+   "https://extradigital.com.do/wp-content/uploads/2021/01/Panteon-de-la-Patria.jpg",
+   "https://cdn2.civitatis.com/republica-dominicana/punta-cana/galeria/panteon-nacional.jpg"
   ],
   "comments": ""
  },
@@ -767,14 +693,10 @@
   "longitude": -69.9833,
   "rating": 4.5,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://s3.amazonaws.com/cdn.conectate-new.com/wp-content/uploads/2017/04/14224058/Museo-de-Arte-Moderno-2.jpg",
+   "https://s3.amazonaws.com/cdn.conectate-new.com/wp-content/uploads/2017/04/14232905/Museo-de-Arte-Moderno-RD2.jpg"
   ],
-  "comments": ""
+  "comments": "https://www.google.com/search?hl=en-DO&gl=do&q=Museo+de+Arte+Moderno,+Av.+Pedro+Henr%C3%ADquez+Ure%C3%B1a,+Santo+Domingo&ludocid=16761537982052845905&lsig=AB86z5X1JDyYU3MPuZdgTH9NFWVK&ved=0CCMQ9aIFahcKEwiY8_bbgp_1AhUAAAAAHQAAAAAQfw&hl=en-DO&gl=do#lrd=0x8ea561ff4e4c2357:0xe89cf1fcfd7a4951,1"
  },
  {
   "name": "Museo del Hombre Dominicano",
@@ -784,12 +706,9 @@
   "longitude": -69.9554267,
   "rating": 4,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://images.visitarepublicadominicana.org/museo-hombre-dominicano-santo-domingo.jpg",
+   "https://elsouvenir.com/wp-content/uploads/2014/10/conferencia-en-el-Museo-del-Hombre-Dominicano-1000x600.jpg",
+   "https://images.visitarepublicadominicana.org/museo-hombre-dominicano-republica-dominicana.jpg"
   ],
   "comments": ""
  },
@@ -801,12 +720,10 @@
   "longitude": -69.8864106441761,
   "rating": 0,
   "images": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   ""
+   "https://imgs-akamai.mnstatic.com/ec/86/ec86050b7dbb283b6a45868ecb252e0e.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/5/5e/CCSD_RD_12_2017_7542.jpg",
+   "https://www.ecured.cu/images/2/26/Monsaterio_de_san_francisco_rep%C3%BAblica_dominicana.JPG",
+   "https://s3.amazonaws.com/cdn.conectate-new.com/wp-content/uploads/2017/05/16045621/Ruinas-de-San-Francisco-2.jpg"
   ],
   "comments": ""
  }

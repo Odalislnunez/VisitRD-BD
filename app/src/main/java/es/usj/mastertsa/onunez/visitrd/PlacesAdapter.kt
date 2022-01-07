@@ -19,7 +19,7 @@ class PlacesAdapter(private val mContext: Context, private val placeList: List<P
 
         layout.tvNamePlace.text = place.name
         layout.tvLocationPlace.text = place.location
-        var image: String = place.images?.get(0)?.let {
+        var image: String? = place.images?.get(0)?.let {
             it.split(",")[0].replace("[","").replace("\\","").replace("\"","")
         }
         Glide.with(mContext).load(image).into(layout.ivPlace)

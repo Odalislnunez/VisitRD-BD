@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_place.*
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.view.Window
+import android.webkit.WebViewClient
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
@@ -42,9 +43,6 @@ class PlaceActivity : AppCompatActivity() {
         setContentView(bindings.root)
 
         val place = intent.getSerializableExtra("place") as Place
-        val adapterComment = place.comments?.let {
-            CommentsPlacesAdapter(this, it, getString(R.string.view_more))
-        }
 
         for (i in place.images!![0].split(",")) {
             val containerIv = CardView(this)
@@ -63,20 +61,21 @@ class PlaceActivity : AppCompatActivity() {
         bindings.tvLocationP.text = place.location
         bindings.rBar.rating = place.rating.toFloat()
         bindings.tvDescription.text = place.description
-        bindings.lvComments.adapter = adapterComment
         lat = place.latitude
         lon = place.longitude
+
+        bindings.wvComments.webViewClient = WebViewClient()
+        bindings.wvComments.loadUrl(place.comments!!)
 
         gpsRecord()
     }
 
     private fun gpsRecord() {
         locManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
-            PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
-                Manifest.permission.ACCESS_COARSE_LOCATION)
-            != PackageManager.PERMISSION_GRANTED) {
-            return
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+            && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, R.string.no_permission, Toast.LENGTH_LONG).show()
+                return
         }
         val loc = locManager!!.getLastKnownLocation(LocationManager.GPS_PROVIDER)
         showPosition(loc)
@@ -95,8 +94,8 @@ class PlaceActivity : AppCompatActivity() {
     private fun showPosition(loc: Location?): Array<String> {
         val data: Array<String>
         if (loc != null) {
-            lat = loc.latitude.toString()
-            lon = loc.longitude.toString()
+//            lat = loc.latitude.toString()
+//            lon = loc.longitude.toString()
             data = arrayOf(loc.longitude.toString(), loc.latitude.toString())
         } else {
             data = arrayOf(40.4167754.toString(), (-3.7037901999999576).toString(), "Default location")

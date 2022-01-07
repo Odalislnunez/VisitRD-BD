@@ -3,9 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android Studio Projects/VisitRD/app/src/main/res/layout/activity_place.xml" value="0.25" />
+        <entry key="..\:/Android Studio Projects/VisitRD/app/src/main/res/layout/activity_place.xml" value="0.536" />
         <entry key="..\:/Android Studio Projects/VisitRD/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Android Studio Projects/VisitRD/app/src/main/res/layout/item_comments_place.xml" value="0.536" />
         <entry key="..\:/Android Studio Projects/VisitRD/app/src/main/res/layout/item_place.xml" value="0.536" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/layout/activity_map.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/layout/activity_place.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/layout/item_comments_place.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/layout/item_place.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/menu/menu_map.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/MasterTSA/VisitRD/app/src/main/res/menu/place_menu.xml" value="0.33" />
+        <entry key="..\:/Users/onunez/Documents/Projects Android/VisitRD/app/src/main/res/layout/activity_main.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/onunez/Documents/Projects Android/VisitRD/app/src/main/res/layout/activity_place.xml" value="0.49660889223813115" />
+        <entry key="..\:/Users/onunez/Documents/Projects Android/VisitRD/app/src/main/res/layout/item_comments_place.xml" value="0.5" />
+        <entry key="..\:/Users/onunez/Documents/Projects Android/VisitRD/app/src/main/res/layout/item_images_place.xml" value="0.26328125" />
+        <entry key="..\:/Users/onunez/Documents/Projects Android/VisitRD/app/src/main/res/layout/item_place.xml" value="0.5" />
+        <entry key="..\:/Users/onunez/Documents/Projects Android/VisitRD/app/src/main/res/menu/main_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
