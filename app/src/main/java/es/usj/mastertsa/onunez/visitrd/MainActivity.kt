@@ -16,14 +16,14 @@ import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
     private val placeList = ArrayList<Place>()
-    private var adapter: PlacesAdapter? = null
+    private lateinit var adapter: PlacesAdapter
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
 
-        val search = menu?.findItem(R.string.search)
+        val search = menu?.findItem(R.id.app_bar_search)
         val searchView = search?.actionView as SearchView
-        searchView.queryHint = R.string.search.toString()
+        searchView.queryHint = getString(R.string.search)
 
         searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                adapter?.filter?.filter(newText)
+                adapter.filter.filter(newText)
                 return true
             }
         })
@@ -53,13 +53,13 @@ class MainActivity : AppCompatActivity() {
                 val jsonObject = jsonArray.getJSONObject(i)
                 placeList.add(
                     Place(
-                        jsonObject.optString("name") + "\n",
-                        jsonObject.optString("location") + "\n",
-                        jsonObject.optString("description") + "\n",
-                        listOf<String>(jsonObject.optString("images")) + "\n",
+                        jsonObject.optString("name"),
+                        jsonObject.optString("location"),
+                        jsonObject.optString("description"),
+                        listOf<String>(jsonObject.optString("images")),
                         jsonObject.optString("comments"),
-                        jsonObject.optString("latitude") + "\n",
-                        jsonObject.optString("longitude") + "\n",
+                        jsonObject.optString("latitude"),
+                        jsonObject.optString("longitude"),
                         jsonObject.optDouble("rating")
                     )
                 )

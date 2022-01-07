@@ -9,7 +9,7 @@
     <string name="place_location">Ubicación del Lugar</string>
     <string name="description_label">Descripción</string>
     <string name="description">Descripción</string>
-    <string name="comments_label">Comentarios</string>
+    <string name="comments_label">Críticas y búsqueda en Google</string>
     <string name="user_name">Usuario</string>
     <string name="comment_user">Comentario</string>
     <string name="title_activity_maps">Maps Activity</string>

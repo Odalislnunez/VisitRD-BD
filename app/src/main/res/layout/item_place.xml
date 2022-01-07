@@ -20,17 +20,6 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/ivPlace"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="3dp"
-        android:contentDescription="TODO"
-        app:srcCompat="@drawable/ic_launcher_background"
-        tools:ignore="ImageContrastCheck" />
-
     <TextView
         android:id="@+id/tvNamePlace"
         android:layout_width="match_parent"
@@ -41,6 +30,17 @@
         android:text="@string/place_name"
         android:textSize="13sp"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivPlace"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/tvLocationPlace"
