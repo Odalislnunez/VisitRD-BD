@@ -15,4 +15,5 @@
     <string name="title_activity_maps">Maps Activity</string>
     <string name="view_more">...ver más</string>
     <string name="submit_rating">Submit Rating</string>
+    <string name="no_permission">Lo lamentamos, la app no tiene permisos para acceder a la locación, habilite los permisos e intente de nuevo.</string>
 </resources>

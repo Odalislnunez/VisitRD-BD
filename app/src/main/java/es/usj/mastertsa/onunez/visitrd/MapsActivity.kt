@@ -30,7 +30,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setContentView(R.layout.activity_maps)
         extra = intent.extras
         longitude = extra!!.getString("Longitude")
@@ -42,9 +41,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         if (mapFragment == null) {
             mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
             mapFragment!!.getMapAsync(this@MapsActivity)
-        }
-        if (mapFragment != null) {
-            Toast.makeText(this, "MapActivity de Google disponible", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -59,7 +55,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             val nuevaPosicion = LatLng(dLatitude, dLongitude)
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
                 && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                return
+                    Toast.makeText(this, R.string.no_permission, Toast.LENGTH_LONG).show()
+                    return
             }
             map!!.isMyLocationEnabled = true
             map!!.moveCamera(CameraUpdateFactory.newLatLngZoom(nuevaPosicion, 20f))
@@ -77,7 +74,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     .position(nuevaPosicion))
             val cameraPosition = CameraPosition.builder()
                 .target(nuevaPosicion)
-                .zoom(16.0f)
+                .zoom(10.0f)
                 .tilt(45.0f)
                 .bearing(45.0f)
                 .build()

@@ -3,7 +3,6 @@ package es.usj.mastertsa.onunez.visitrd
 import android.Manifest
 import android.content.Context
 import android.content.Intent
-import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationListener
@@ -40,7 +39,6 @@ class PlaceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
-//        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setContentView(bindings.root)
 
         val place = intent.getSerializableExtra("place") as Place
@@ -113,8 +111,8 @@ class PlaceActivity : AppCompatActivity() {
             R.id.btnVisit -> {
                 try {
                     val intent = Intent(this@PlaceActivity, MapsActivity::class.java)
-                    intent.putExtra("Longitude", lat)
-                    intent.putExtra("Latitude", lon)
+                    intent.putExtra("Longitude", lon)
+                    intent.putExtra("Latitude", lat)
                     startActivity(intent)
                 } catch (ex: Exception) {
                     Toast.makeText(this@PlaceActivity, ex.message, Toast.LENGTH_LONG).show()
