@@ -36,6 +36,10 @@ class PlacesAdapter(private val mContext: Context, private var placeList: List<P
         return placeList.size
     }
 
+    override fun getItem(position: Int): Place? {
+        return placeList[position]
+    }
+
     override fun getFilter(): Filter {
         return object : Filter() {
             override fun publishResults(charSequence: CharSequence?, filterResults: Filter.FilterResults) {

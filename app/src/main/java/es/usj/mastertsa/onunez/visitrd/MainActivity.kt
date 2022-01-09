@@ -3,12 +3,10 @@ package es.usj.mastertsa.onunez.visitrd
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
 import android.widget.SearchView
-import android.widget.Toast
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.item_place.*
 import java.io.IOException
 import org.json.JSONArray
 import java.io.InputStream
@@ -75,7 +73,7 @@ class MainActivity : AppCompatActivity() {
 
         lvMain.setOnItemClickListener { parent, view, position, id ->
             val intent = Intent(this, PlaceActivity::class.java)
-            intent.putExtra("place", placeList[position])
+            intent.putExtra("place", adapter.getItem(position))
             startActivity(intent)
         }
     }
