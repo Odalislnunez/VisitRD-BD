@@ -1,10 +1,10 @@
-package es.usj.mastertsa.onunez.visitrd
+package es.usj.mastertsa.onunez.visitrd.presentation
 
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
+import es.usj.mastertsa.onunez.visitrd.R
 import java.util.*
 
 class SplashScreenActivity : AppCompatActivity() {

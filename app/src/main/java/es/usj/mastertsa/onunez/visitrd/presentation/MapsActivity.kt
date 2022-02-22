@@ -1,14 +1,12 @@
-package es.usj.mastertsa.onunez.visitrd
+package es.usj.mastertsa.onunez.visitrd.presentation
 
 import android.Manifest
-import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
 import android.location.Address
 import android.location.Geocoder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -17,6 +15,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import es.usj.mastertsa.onunez.visitrd.R
 import java.io.IOException
 import java.util.*
 

@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VisitRD">
         <activity
-            android:name=".VisitsActivity"
+            android:name=".presentation.VisitsActivity"
             android:exported="false" />
 
         <meta-data
@@ -25,17 +25,17 @@
             android:value="true" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".presentation.MapsActivity"
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".PlaceActivity"
+            android:name=".presentation.PlaceActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".presentation.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

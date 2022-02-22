@@ -15,4 +15,6 @@
     <string name="view_more">...view more</string>
     <string name="submit_rating">Submit Rating</string>
     <string name="no_permission">Sorry, the app does not have the permission to access location, enable the permission and try again.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

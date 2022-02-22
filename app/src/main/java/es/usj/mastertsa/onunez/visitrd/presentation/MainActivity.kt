@@ -1,11 +1,13 @@
-package es.usj.mastertsa.onunez.visitrd
+package es.usj.mastertsa.onunez.visitrd.presentation
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.widget.SearchView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import es.usj.mastertsa.onunez.visitrd.Place
+import es.usj.mastertsa.onunez.visitrd.PlacesAdapter
+import es.usj.mastertsa.onunez.visitrd.R
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.IOException
 import org.json.JSONArray

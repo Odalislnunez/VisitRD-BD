@@ -1,4 +1,4 @@
-package es.usj.mastertsa.onunez.visitrd
+package es.usj.mastertsa.onunez.visitrd.presentation
 
 import android.Manifest
 import android.content.Context
@@ -20,6 +20,8 @@ import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
 import com.bumptech.glide.Glide
+import es.usj.mastertsa.onunez.visitrd.Place
+import es.usj.mastertsa.onunez.visitrd.R
 import es.usj.mastertsa.onunez.visitrd.databinding.ActivityPlaceBinding
 import kotlinx.android.synthetic.main.item_place.view.*
 
