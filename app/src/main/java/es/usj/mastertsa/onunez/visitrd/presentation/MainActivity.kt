@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.view.Menu
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
-import es.usj.mastertsa.onunez.visitrd.Place
-import es.usj.mastertsa.onunez.visitrd.PlacesAdapter
+import es.usj.mastertsa.onunez.visitrd.domain.model.Place
+import es.usj.mastertsa.onunez.visitrd.presentation.view.PlacesAdapter
 import es.usj.mastertsa.onunez.visitrd.R
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.IOException

@@ -1,4 +1,4 @@
-package es.usj.mastertsa.onunez.visitrd
+package es.usj.mastertsa.onunez.visitrd.presentation.view
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -9,7 +9,8 @@ import android.widget.ArrayAdapter
 import android.widget.Filter
 import android.widget.Filterable
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.activity_splash_screen.view.*
+import es.usj.mastertsa.onunez.visitrd.R
+import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import kotlinx.android.synthetic.main.item_place.view.*
 
 class PlacesAdapter(private val mContext: Context, private var placeList: List<Place>) : ArrayAdapter<Place>(mContext, 0, placeList), Filterable {

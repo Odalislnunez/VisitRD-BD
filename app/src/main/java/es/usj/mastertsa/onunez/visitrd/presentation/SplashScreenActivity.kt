@@ -5,6 +5,7 @@ import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import es.usj.mastertsa.onunez.visitrd.R
+import es.usj.mastertsa.onunez.visitrd.presentation.view.LoginFragment
 import java.util.*
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -16,16 +17,23 @@ class SplashScreenActivity : AppCompatActivity() {
         ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
 
         setContentView(R.layout.activity_splash_screen)
-        val task = object : TimerTask() {
-            override fun run() {
-                val intent = Intent(this@SplashScreenActivity,
-                    MainActivity::class.java
-                )
-                startActivity(intent)
-                finish()
+
+//        if(savedInstanceState == null) {
+            val task = object : TimerTask() {
+                override fun run() {
+                    val intent = Intent(
+                        this@SplashScreenActivity,
+                        MainActivity::class.java
+                    )
+                    startActivity(intent)
+                    finish()
+                }
             }
-        }
-        val timer = Timer()
-        timer.schedule(task, SPLASH_SCREEN_DELAY)
+
+            val timer = Timer()
+            timer.schedule(task, SPLASH_SCREEN_DELAY)
+
+//            supportFragmentManager.beginTransaction().add(LoginFragment.newInstance())
+//        }
     }
 }
