@@ -4,10 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.widget.SearchView
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.presentation.view.PlacesAdapter
 import es.usj.mastertsa.onunez.visitrd.R
+import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.MainViewModel
+import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.MainViewModelFactory
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.IOException
 import org.json.JSONArray
@@ -17,6 +20,9 @@ import java.util.ArrayList
 class MainActivity : AppCompatActivity() {
     private val placeList = ArrayList<Place>()
     private lateinit var adapter: PlacesAdapter
+    private val viewModel: MainViewModel by viewModels {
+        MainViewModelFactory()
+    }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
