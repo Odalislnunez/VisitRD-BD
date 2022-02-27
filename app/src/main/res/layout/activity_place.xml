@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".presentation.PlaceActivity">
+    tools:context=".presentation.view.PlaceActivity">
 
     <TextView
         android:id="@+id/tvNameP"
@@ -112,8 +112,8 @@
         android:textStyle="bold" />
 
 
-    <WebView
-        android:id="@+id/wvComments"
+    <ListView
+        android:id="@+id/lvComments"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="16dp"

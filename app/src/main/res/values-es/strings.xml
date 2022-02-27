@@ -3,17 +3,15 @@
     <string name="app_name">Visita RD</string>
     <string name="logo">Logo</string>
     <string name="search">Buscar</string>
-    <string name="visits">Ver Visitas</string>
     <string name="visit">Visitar</string>
     <string name="place_name">Nombre del Lugar</string>
     <string name="place_location">Ubicación del Lugar</string>
     <string name="description_label">Descripción</string>
     <string name="description">Descripción</string>
     <string name="comments_label">Críticas y búsqueda en Google</string>
-    <string name="user_name">Usuario</string>
-    <string name="comment_user">Comentario</string>
     <string name="title_activity_maps">Maps Activity</string>
-    <string name="view_more">...ver más</string>
-    <string name="submit_rating">Submit Rating</string>
     <string name="no_permission">Lo lamentamos, la app no tiene permisos para acceder a la locación, habilite los permisos e intente de nuevo.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="comment">Comentario</string>
+    <string name="user_comment">Usuario del Comentario</string>
 </resources>

@@ -2,7 +2,7 @@ package es.usj.mastertsa.onunez.visitrd.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.android.libraries.places.api.model.Place
+import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.presentation.view.MainState
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -16,7 +16,13 @@ class MainViewModel(): ViewModel() {
     fun getData() {
         viewModelScope.launch {
             delay(3000) //Simulating network request
-            val place = Place("", "", "", [""], "", "", "", 0.00)
+            val place = Place("",
+                "",
+                "",
+                listOf<String>(""),
+                "",
+                "",
+                "", 0.00)
             mainMutableStateFlow.emit(MainState.Success(place))
         }
     }
