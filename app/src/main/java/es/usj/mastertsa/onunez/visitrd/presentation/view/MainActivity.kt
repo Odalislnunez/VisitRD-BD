@@ -3,8 +3,10 @@ package es.usj.mastertsa.onunez.visitrd.presentation.view
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.commit
 import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.R
 import kotlinx.android.synthetic.main.activity_main.*
@@ -34,7 +36,21 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
         })
+
         return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.app_bar_favorites -> {
+//                supportFragmentManager
+//                    .beginTransaction()
+//                    .add(R.id.fragmentFavorites, FavoritesFragment())
+//                    .commit()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

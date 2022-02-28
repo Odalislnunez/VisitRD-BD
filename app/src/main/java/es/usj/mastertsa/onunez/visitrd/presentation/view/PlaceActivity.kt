@@ -66,8 +66,8 @@ class PlaceActivity : AppCompatActivity() {
         lat = place.latitude
         lon = place.longitude
 
-        bindings.wvComments.webViewClient = WebViewClient()
-        bindings.wvComments.loadUrl(place.comments!!)
+//        bindings.lvComments.webViewClient = WebViewClient()
+//        bindings.lvComments.loadUrl(place.comments!!)
 
         gpsRecord()
     }

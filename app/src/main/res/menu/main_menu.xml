@@ -3,6 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 <!--    <item android:title="@string/visits" />-->
     <item
+        android:id="@+id/app_bar_favorites"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_favorites"
+        android:title="@string/favorites" />
+    <item
         android:id="@+id/app_bar_search"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_search_black_24dp"
