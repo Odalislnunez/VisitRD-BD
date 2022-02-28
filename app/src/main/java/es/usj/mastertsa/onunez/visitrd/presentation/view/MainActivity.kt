@@ -6,7 +6,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.commit
 import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.R
 import kotlinx.android.synthetic.main.activity_main.*
@@ -57,41 +56,48 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val json: String?
-
-        try {
-            val inputStream: InputStream = assets.open("Places.json")
-            inputStream.buffered(5)
-            json = inputStream.bufferedReader().use { it.readText() }
-            val jsonArray = JSONArray(json)
-            for (i in 0 until jsonArray.length()) {
-                val jsonObject = jsonArray.getJSONObject(i)
-                placeList.add(
-                    Place(
-                        jsonObject.optString("name"),
-                        jsonObject.optString("location"),
-                        jsonObject.optString("description"),
-                        listOf<String>(jsonObject.optString("images")),
-                        jsonObject.optString("comments"),
-                        jsonObject.optString("latitude"),
-                        jsonObject.optString("longitude"),
-                        jsonObject.optDouble("rating")
-                    )
-                )
-            }
-        }
-        catch (e: IOException){
-            e.printStackTrace()
+        if(savedInstanceState == null) {
+            supportFragmentManager
+                .beginTransaction()
+                .add(R.id.fragmentContainerView, HomeFragment())
+                .commit()
         }
 
-        adapter = PlacesAdapter(this, placeList)
-
-        lvMain.adapter = adapter
-
-        lvMain.setOnItemClickListener { parent, view, position, id ->
-            val intent = Intent(this, PlaceActivity::class.java)
-            intent.putExtra("place", adapter.getItem(position))
-            startActivity(intent)
-        }
+//        val json: String?
+//
+//        try {
+//            val inputStream: InputStream = assets.open("Places.json")
+//            inputStream.buffered(5)
+//            json = inputStream.bufferedReader().use { it.readText() }
+//            val jsonArray = JSONArray(json)
+//            for (i in 0 until jsonArray.length()) {
+//                val jsonObject = jsonArray.getJSONObject(i)
+//                placeList.add(
+//                    Place(
+//                        jsonObject.optString("name"),
+//                        jsonObject.optString("location"),
+//                        jsonObject.optString("description"),
+//                        listOf<String>(jsonObject.optString("images")),
+//                        jsonObject.optString("comments"),
+//                        jsonObject.optString("latitude"),
+//                        jsonObject.optString("longitude"),
+//                        jsonObject.optDouble("rating")
+//                    )
+//                )
+//            }
+//        }
+//        catch (e: IOException){
+//            e.printStackTrace()
+//        }
+//
+//        adapter = PlacesAdapter(this, placeList)
+//
+//        lvMain.adapter = adapter
+//
+//        lvMain.setOnItemClickListener { parent, view, position, id ->
+//            val intent = Intent(this, PlaceActivity::class.java)
+//            intent.putExtra("place", adapter.getItem(position))
+//            startActivity(intent)
+//        }
     }
 }
