@@ -37,7 +37,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.lvMain.apply {
+        binding.rvMain.apply {
             adapter = placesAdapter
             layoutManager = LinearLayoutManager(context)
         }
