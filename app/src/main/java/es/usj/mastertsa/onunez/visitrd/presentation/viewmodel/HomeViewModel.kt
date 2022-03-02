@@ -43,7 +43,8 @@ class HomeViewModel: ViewModel() {
                 "https://www.alltrails.com/trail/dominican-republic/azua/sendero-cola-de-pato",
                 "",
                 "",
-                4.5)
+                4.5,
+                false)
         )
         places.add(Place(1,
                 "Prueba",
@@ -54,7 +55,8 @@ class HomeViewModel: ViewModel() {
                 "https://www.alltrails.com/trail/dominican-republic/azua/sendero-cola-de-pato",
                 "",
                 "",
-                4.5)
+                4.5,
+                true)
         )
 
         return places
