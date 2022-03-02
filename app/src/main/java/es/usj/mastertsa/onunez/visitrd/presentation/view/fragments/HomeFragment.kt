@@ -9,7 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import es.usj.mastertsa.onunez.visitrd.databinding.FragmentHomeBinding
 import es.usj.mastertsa.onunez.visitrd.presentation.view.HomeAdapter
-import es.usj.mastertsa.onunez.visitrd.presentation.view.HomeState
+import es.usj.mastertsa.onunez.visitrd.presentation.view.states.HomeState
 import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.HomeViewModel
 import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.HomeViewModelFactory
 import kotlinx.coroutines.flow.collect

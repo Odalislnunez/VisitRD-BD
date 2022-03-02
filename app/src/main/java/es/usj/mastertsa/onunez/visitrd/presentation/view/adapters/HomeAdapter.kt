@@ -1,4 +1,4 @@
-package es.usj.mastertsa.onunez.visitrd.presentation.view
+package es.usj.mastertsa.onunez.visitrd.presentation.view.adapters
 
 import android.content.Context
 import android.view.LayoutInflater

@@ -1,4 +1,4 @@
-package es.usj.mastertsa.onunez.visitrd.presentation.view
+package es.usj.mastertsa.onunez.visitrd.presentation.view.activities
 
 import android.Manifest
 import android.content.Context
@@ -15,7 +15,6 @@ import kotlinx.android.synthetic.main.activity_place.*
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.view.Window
-import android.webkit.WebViewClient
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat

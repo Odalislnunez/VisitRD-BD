@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".presentation.view.PlaceActivity">
+    tools:context=".presentation.view.activities.PlaceActivity">
 
     <TextView
         android:id="@+id/tvNameP"

@@ -3,16 +3,16 @@ package es.usj.mastertsa.onunez.visitrd.presentation.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import es.usj.mastertsa.onunez.visitrd.domain.model.Place
-import es.usj.mastertsa.onunez.visitrd.presentation.view.HomeState
+import es.usj.mastertsa.onunez.visitrd.presentation.view.states.PlaceState
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 class HomeViewModel: ViewModel() {
-    private val placesMutableStateFlow: MutableStateFlow<HomeState> =
-        MutableStateFlow(HomeState.Loading)
-    val homeStateFlow: StateFlow<HomeState> = placesMutableStateFlow
+    private val placesMutableStateFlow: MutableStateFlow<PlaceState> =
+        MutableStateFlow(PlaceState.Loading)
+    val homeStateFlow: StateFlow<PlaceState> = placesMutableStateFlow
 
     fun getData() {
         viewModelScope.launch {
@@ -28,7 +28,7 @@ class HomeViewModel: ViewModel() {
 //                "",
 //                "",
 //                4.5)
-            placesMutableStateFlow.emit(HomeState.Success(places))
+            placesMutableStateFlow.emit(PlaceState.Success(places))
         }
     }
 

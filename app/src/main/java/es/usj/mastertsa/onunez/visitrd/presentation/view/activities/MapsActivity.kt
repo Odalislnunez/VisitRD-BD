@@ -1,4 +1,4 @@
-package es.usj.mastertsa.onunez.visitrd.presentation.view
+package es.usj.mastertsa.onunez.visitrd.presentation.view.activities
 
 import android.Manifest
 import android.content.pm.PackageManager
