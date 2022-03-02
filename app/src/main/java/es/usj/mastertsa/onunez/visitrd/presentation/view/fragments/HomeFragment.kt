@@ -1,5 +1,6 @@
 package es.usj.mastertsa.onunez.visitrd.presentation.view.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
@@ -8,6 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import es.usj.mastertsa.onunez.visitrd.databinding.FragmentHomeBinding
+import es.usj.mastertsa.onunez.visitrd.presentation.view.activities.PlaceActivity
 import es.usj.mastertsa.onunez.visitrd.presentation.view.adapters.HomeAdapter
 import es.usj.mastertsa.onunez.visitrd.presentation.view.states.PlaceState
 import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.HomeViewModel
@@ -26,6 +28,12 @@ class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+//        binding.rvMain.setOnItemClickListener { parent, view, position, id ->
+//            val intent = Intent(this, PlaceActivity::class.java)
+//            intent.putExtra("place", adapter.getItem(position))
+//            startActivity(intent)
+//        }
     }
 
     override fun onCreateView(

@@ -2,7 +2,14 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/btnShare"
+        android:icon="@drawable/ic_share_24dp"
+        android:title="@string/share"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/btnVisit"
+        android:icon="@drawable/ic_map_24dp"
         android:title="@string/visit"
         app:showAsAction="ifRoom" />
 </menu>

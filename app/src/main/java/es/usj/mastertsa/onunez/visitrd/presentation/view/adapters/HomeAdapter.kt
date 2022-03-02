@@ -35,13 +35,17 @@ class HomeAdapter(private val mContext: Context?): ListAdapter<Place, HomeAdapte
         }
         holder.binding.rBPlace.rating = place.rating!!.toFloat()
         holder.binding.btnFavorite.setImageResource(setFavoriteIcon(place.favorite))
+        holder.binding.btnFavorite.setOnClickListener {
+            holder.binding.btnFavorite.setImageResource(setFavoriteIcon(!place.favorite))
+            place.favorite = !place.favorite
+        }
     }
 
     private fun setFavoriteIcon(favorite: Boolean): Int {
         return if(favorite)
-            R.drawable.ic_favorite_white_24dp
+            R.drawable.ic_favorite_red_24dp
         else
-            R.drawable.ic_favorite_border_white_24dp
+            R.drawable.ic_favorite_border_red_24dp
     }
 }
 
