@@ -1,5 +1,6 @@
 package es.usj.mastertsa.onunez.visitrd.presentation.view.fragments
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
@@ -19,21 +20,25 @@ import kotlinx.coroutines.flow.collect
 class HomeFragment : Fragment() {
     var _binding: FragmentHomeBinding? = null
     val binding: FragmentHomeBinding get() = _binding!!
+    lateinit var mContext: Context
 
     val homeViewModel: HomeViewModel by viewModels {
         HomeViewModelFactory()
     }
 
-    val placesAdapter = HomeAdapter(context)
+    lateinit var placesAdapter: HomeAdapter
+
+    override fun onAttach(context: Context) {
+        mContext = context
+        super.onAttach(context)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
+    override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -41,12 +46,14 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        placesAdapter = HomeAdapter(mContext)
+
         binding.rvMain.apply {
             adapter = placesAdapter
             placesAdapter.setOnItemClickListener(object: HomeAdapter.onItemClickListener {
                 override fun onItemClick(position: Int) {
-                    Toast.makeText(activity,position.toString(),Toast.LENGTH_LONG)
-                    val intent = Intent(activity, PlaceActivity::class.java)
+                    Toast.makeText(mContext,position.toString(),Toast.LENGTH_LONG)
+                    val intent = Intent(mContext, PlaceActivity::class.java)
                     intent.putExtra("place", placesAdapter.getItem(position))
                     startActivity(intent)
                 }
