@@ -39,7 +39,7 @@
         android:layout_marginTop="3dp"
         android:layout_marginBottom="3dp"
         android:contentDescription="TODO"
-        app:srcCompat="@drawable/ic_launcher_background"
+        app:srcCompat="@drawable/ic_favorite_white_24dp"
         tools:ignore="ImageContrastCheck" />
 
     <TextView
@@ -64,6 +64,17 @@
         android:numStars="5"
         android:stepSize="0.5"
         android:theme="@style/Widget.AppCompat.RatingBar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnFavorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/ic_favorite_red_24dp"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.cardview.widget.CardView>

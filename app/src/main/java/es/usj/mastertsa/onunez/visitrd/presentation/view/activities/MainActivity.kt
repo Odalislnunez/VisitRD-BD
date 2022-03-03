@@ -1,4 +1,4 @@
-package es.usj.mastertsa.onunez.visitrd.presentation.view
+package es.usj.mastertsa.onunez.visitrd.presentation.view.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,10 +8,8 @@ import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.R
-import kotlinx.android.synthetic.main.activity_main.*
-import java.io.IOException
-import org.json.JSONArray
-import java.io.InputStream
+import es.usj.mastertsa.onunez.visitrd.presentation.view.adapters.PlacesAdapter
+import es.usj.mastertsa.onunez.visitrd.presentation.view.fragments.HomeFragment
 import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {

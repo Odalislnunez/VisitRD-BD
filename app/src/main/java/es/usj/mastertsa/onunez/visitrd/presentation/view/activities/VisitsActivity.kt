@@ -1,4 +1,4 @@
-package es.usj.mastertsa.onunez.visitrd.presentation.view
+package es.usj.mastertsa.onunez.visitrd.presentation.view.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
