@@ -45,6 +45,7 @@ class HomeFragment : Fragment() {
             adapter = placesAdapter
             placesAdapter.setOnItemClickListener(object: HomeAdapter.onItemClickListener {
                 override fun onItemClick(position: Int) {
+                    Toast.makeText(activity,position.toString(),Toast.LENGTH_LONG)
                     val intent = Intent(activity, PlaceActivity::class.java)
                     intent.putExtra("place", placesAdapter.getItem(position))
                     startActivity(intent)
