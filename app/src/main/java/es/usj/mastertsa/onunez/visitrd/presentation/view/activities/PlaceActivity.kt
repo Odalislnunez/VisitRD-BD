@@ -18,6 +18,7 @@ import android.view.Window
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.R
@@ -29,12 +30,15 @@ class PlaceActivity : AppCompatActivity() {
     private var lon: String = "-3.7037901999999576"
     private var locManager: LocationManager? = null
     private var locListener: LocationListener? = null
+    private var favorite: Boolean = true
     private val bindings: ActivityPlaceBinding by lazy {
         ActivityPlaceBinding.inflate(layoutInflater)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.place_menu, menu)
+
+        setFavoriteIcon(menu?.findItem(R.id.btnFavoritePlace)!!)
         return true
     }
 
@@ -64,6 +68,7 @@ class PlaceActivity : AppCompatActivity() {
         bindings.tvDescription.text = place.description
         lat = place.latitude
         lon = place.longitude
+        favorite = place.favorite
 
 //        bindings.lvComments.webViewClient = WebViewClient()
 //        bindings.lvComments.loadUrl(place.comments!!)
@@ -108,6 +113,20 @@ class PlaceActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item!!.itemId) {
+            R.id.btnFavoritePlace -> {
+                favorite = !favorite
+                setFavoriteIcon(item)
+            }
+            R.id.btnShare -> {
+                val intent = Intent().apply {
+                    action = Intent.ACTION_SEND
+                    putExtra(Intent.EXTRA_TEXT, "Prueba")
+                    type = "text/plain"
+                }
+
+                val shareIntent = Intent.createChooser(intent, null)
+                startActivity(shareIntent)
+            }
             R.id.btnVisit -> {
                 try {
                     val intent = Intent(this@PlaceActivity, MapsActivity::class.java)
@@ -121,5 +140,14 @@ class PlaceActivity : AppCompatActivity() {
             else -> return super.onOptionsItemSelected(item)
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun setFavoriteIcon(menuItem: MenuItem) {
+        val id = if(favorite)
+            R.drawable.ic_favorite_white_24dp
+        else
+            R.drawable.ic_favorite_border_white_24dp
+
+        menuItem.icon = ContextCompat.getDrawable(this, id)
     }
 }

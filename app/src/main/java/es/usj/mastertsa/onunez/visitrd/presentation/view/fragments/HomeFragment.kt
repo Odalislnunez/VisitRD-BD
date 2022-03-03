@@ -28,12 +28,6 @@ class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-//        binding.rvMain.setOnItemClickListener { parent, view, position, id ->
-//            val intent = Intent(this, PlaceActivity::class.java)
-//            intent.putExtra("place", adapter.getItem(position))
-//            startActivity(intent)
-//        }
     }
 
     override fun onCreateView(
@@ -49,6 +43,13 @@ class HomeFragment : Fragment() {
 
         binding.rvMain.apply {
             adapter = placesAdapter
+            placesAdapter.setOnItemClickListener(object: HomeAdapter.onItemClickListener {
+                override fun onItemClick(position: Int) {
+                    val intent = Intent(activity, PlaceActivity::class.java)
+                    intent.putExtra("place", placesAdapter.getItem(position))
+                    startActivity(intent)
+                }
+            })
             layoutManager = LinearLayoutManager(context)
         }
 
