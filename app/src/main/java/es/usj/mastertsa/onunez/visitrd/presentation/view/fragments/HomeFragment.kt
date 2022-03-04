@@ -50,14 +50,6 @@ class HomeFragment : Fragment() {
 
         binding.rvMain.apply {
             adapter = placesAdapter
-            placesAdapter.setOnItemClickListener(object: HomeAdapter.onItemClickListener {
-                override fun onItemClick(position: Int) {
-                    Toast.makeText(mContext,position.toString(),Toast.LENGTH_LONG)
-                    val intent = Intent(mContext, PlaceActivity::class.java)
-                    intent.putExtra("place", placesAdapter.getItem(position))
-                    startActivity(intent)
-                }
-            })
             layoutManager = LinearLayoutManager(context)
         }
 

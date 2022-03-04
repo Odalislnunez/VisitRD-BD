@@ -18,22 +18,7 @@ import kotlinx.android.synthetic.main.item_place.view.*
 
 
 class HomeAdapter(private val mContext: Context?): ListAdapter<Place, HomeAdapter.HomeViewHolder>(PlacesDiffUtilCallback) {
-    private lateinit var mListener: onItemClickListener
-    inner class HomeViewHolder(val binding: ItemPlaceBinding, itemView: View, listener: onItemClickListener): RecyclerView.ViewHolder(binding.root) {
-        init {
-            itemView.setOnClickListener {
-                listener.onItemClick(adapterPosition)
-            }
-        }
-    }
-
-    interface onItemClickListener {
-        fun onItemClick(position: Int)
-    }
-
-    fun setOnItemClickListener(listener: onItemClickListener) {
-        mListener = listener
-    }
+    inner class HomeViewHolder(val binding: ItemPlaceBinding): RecyclerView.ViewHolder(binding.root)
 
     public override fun getItem(position: Int): Place {
         return super.getItem(position)
@@ -41,8 +26,7 @@ class HomeAdapter(private val mContext: Context?): ListAdapter<Place, HomeAdapte
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeViewHolder {
         val binding = ItemPlaceBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_place, parent, false)
-        return HomeViewHolder(binding, view, mListener)
+        return HomeViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
@@ -62,12 +46,11 @@ class HomeAdapter(private val mContext: Context?): ListAdapter<Place, HomeAdapte
             place.favorite = !place.favorite
         }
 
-//        holder.parentLayout.setOnClickListener(View.OnClickListener {
-//            val intent = Intent(mContext, PlaceActivity::class.java)
-//            intent.putExtra("place", place)
-//            mContext!!.startActivity(intent)
-//        })
-
+        holder.itemView.setOnClickListener {
+            val intent = Intent(mContext, PlaceActivity::class.java)
+                intent.putExtra("place", place)
+                mContext!!.startActivity(intent)
+        }
     }
 
     private fun setFavoriteIcon(favorite: Boolean): Int {
