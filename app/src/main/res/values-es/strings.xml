@@ -10,11 +10,12 @@
     <string name="place_location">Ubicación del Lugar</string>
     <string name="description_label">Descripción</string>
     <string name="description">Descripción</string>
-    <string name="comments_label">Críticas y búsqueda en Google</string>
+    <string name="comments_label">Comentarios</string>
     <string name="title_activity_maps">Maps Activity</string>
     <string name="no_permission">Lo lamentamos, la app no tiene permisos para acceder a la locación, habilite los permisos e intente de nuevo.</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="comment">Comentario</string>
     <string name="user_comment">Usuario del Comentario</string>
     <string name="favorites">Favoritos</string>
+    <string name="add_comment">Agrega un comentario</string>
 </resources>

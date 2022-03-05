@@ -19,8 +19,9 @@ class CommentRepositoryImpl(): CommentRepository {
 
     fun getFakeData(): MutableList<Comment> {
         val comments = mutableListOf<Comment>()
-        comments.add( Comment(0,0,"Comentario de prueba."))
-        comments.add( Comment(1,0,"Comentario de prueba2."))
+        comments.add( Comment(0,0,"Comentario de prueba.", "Lidy Nunez"))
+        comments.add( Comment(1,0,"Comentario de prueba2.", "Lidy Nunez"))
+        comments.add( Comment(1,1,"Comentario de prueba3.", "Lidy Nunez"))
 
         return comments
     }
