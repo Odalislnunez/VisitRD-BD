@@ -1,7 +1,6 @@
 package es.usj.mastertsa.onunez.visitrd.presentation.view.fragments
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
@@ -10,11 +9,10 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import es.usj.mastertsa.onunez.visitrd.databinding.FragmentHomeBinding
-import es.usj.mastertsa.onunez.visitrd.presentation.view.activities.PlaceActivity
-import es.usj.mastertsa.onunez.visitrd.presentation.view.adapters.HomeAdapter
+import es.usj.mastertsa.onunez.visitrd.presentation.view.adapters.PlaceAdapter
 import es.usj.mastertsa.onunez.visitrd.presentation.view.states.PlaceState
-import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.HomeViewModel
-import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.HomeViewModelFactory
+import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.PlaceViewModel
+import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.PlaceViewModelFactory
 import kotlinx.coroutines.flow.collect
 
 class HomeFragment : Fragment() {
@@ -22,11 +20,11 @@ class HomeFragment : Fragment() {
     val binding: FragmentHomeBinding get() = _binding!!
     lateinit var mContext: Context
 
-    val homeViewModel: HomeViewModel by viewModels {
-        HomeViewModelFactory()
+    val placeViewModel: PlaceViewModel by viewModels {
+        PlaceViewModelFactory()
     }
 
-    lateinit var placesAdapter: HomeAdapter
+    lateinit var placesAdapter: PlaceAdapter
 
     override fun onAttach(context: Context) {
         mContext = context
@@ -46,7 +44,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        placesAdapter = HomeAdapter(mContext)
+        placesAdapter = PlaceAdapter(mContext)
 
         binding.rvMain.apply {
             adapter = placesAdapter
@@ -54,12 +52,12 @@ class HomeFragment : Fragment() {
         }
 
         viewLifecycleOwner.lifecycleScope.launchWhenStarted {
-            homeViewModel.homeStateFlow.collect { placeState: PlaceState ->
+            placeViewModel.homeStateFlow.collect { placeState: PlaceState ->
                 setState(placeState)
             }
         }
 
-        homeViewModel.getData()
+        placeViewModel.getData()
     }
 
     private fun setState(placeState: PlaceState) {

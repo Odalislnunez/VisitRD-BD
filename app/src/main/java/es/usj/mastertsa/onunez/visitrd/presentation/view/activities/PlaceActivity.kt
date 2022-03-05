@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_place.*
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.view.Window
@@ -23,7 +22,6 @@ import com.bumptech.glide.Glide
 import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.R
 import es.usj.mastertsa.onunez.visitrd.databinding.ActivityPlaceBinding
-import kotlinx.android.synthetic.main.item_place.view.*
 
 class PlaceActivity : AppCompatActivity() {
     private var lat: String = "40.4167754"

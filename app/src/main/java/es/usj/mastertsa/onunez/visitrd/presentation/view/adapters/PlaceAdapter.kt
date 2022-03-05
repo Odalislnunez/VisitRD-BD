@@ -3,9 +3,7 @@ package es.usj.mastertsa.onunez.visitrd.presentation.view.adapters
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -14,10 +12,9 @@ import es.usj.mastertsa.onunez.visitrd.R
 import es.usj.mastertsa.onunez.visitrd.databinding.ItemPlaceBinding
 import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.presentation.view.activities.PlaceActivity
-import kotlinx.android.synthetic.main.item_place.view.*
 
 
-class HomeAdapter(private val mContext: Context?): ListAdapter<Place, HomeAdapter.HomeViewHolder>(PlacesDiffUtilCallback) {
+class PlaceAdapter(private val mContext: Context?): ListAdapter<Place, PlaceAdapter.HomeViewHolder>(PlacesDiffUtilCallback) {
     inner class HomeViewHolder(val binding: ItemPlaceBinding): RecyclerView.ViewHolder(binding.root)
 
     public override fun getItem(position: Int): Place {
