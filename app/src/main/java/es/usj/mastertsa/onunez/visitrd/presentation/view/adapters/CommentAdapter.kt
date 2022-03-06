@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import es.usj.mastertsa.onunez.visitrd.databinding.ItemCommentBinding
 import es.usj.mastertsa.onunez.visitrd.domain.model.Comment
 
-class CommentAdapter(private val placeCode: Int): ListAdapter<Comment, CommentAdapter.CommentViewHolder>(CommentsDiffUtilCallback) {
+class CommentAdapter(): ListAdapter<Comment, CommentAdapter.CommentViewHolder>(CommentsDiffUtilCallback) {
     inner class CommentViewHolder(val binding: ItemCommentBinding): RecyclerView.ViewHolder(binding.root)
 
     public override fun getItem(position: Int): Comment {
@@ -23,10 +23,8 @@ class CommentAdapter(private val placeCode: Int): ListAdapter<Comment, CommentAd
     override fun onBindViewHolder(holder: CommentViewHolder, position: Int) {
         val comment = getItem(position)
 
-        if(comment.place_code == placeCode){
-            holder.binding.tvComment.text = comment.comment
-            holder.binding.tvUser.text = comment.user
-        }
+        holder.binding.tvComment.text = comment.comment
+        holder.binding.tvUser.text = comment.user_name
     }
 }
 

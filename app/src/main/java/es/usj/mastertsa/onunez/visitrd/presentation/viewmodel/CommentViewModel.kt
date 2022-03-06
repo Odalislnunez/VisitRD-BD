@@ -19,16 +19,16 @@ class CommentViewModel(
         MutableStateFlow(CommentState.Loading)
     val commentStateFlow: StateFlow<CommentState> = commentsMutableStateFlow
 
-    fun getData() {
+    fun getData(placeCode: Int) {
         viewModelScope.launch {
             delay(1000)
-            val newComments = getCommentUseCase.getComments()
+            val newComments = getCommentUseCase.getComments(placeCode)
             commentsMutableStateFlow.emit(CommentState.Success(newComments))
         }
     }
 
     fun addComment(comment: Comment){
         addCommentUseCase.addComment(comment)
-        getData()
+        getData(comment.place_code)
     }
 }

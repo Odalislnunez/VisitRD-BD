@@ -28,19 +28,31 @@ class PlaceAdapter(private val mContext: Context?): ListAdapter<Place, PlaceAdap
 
     override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
         val place = getItem(position)
+        var favorite = place.favorite == "true"
+
         holder.binding.tvNamePlace.text = place.name
         holder.binding.tvLocationPlace.text = place.location
-        var image: String? = place.images?.get(0)?.let {
-            it.split(",")[0].replace("[","").replace("\\","").replace("\"","")
+
+        //FOR MANY IMAGES
+//        var image: String? = place.images?.get(0)?.let {
+//            it.split(",")[0].replace("[","").replace("\\","").replace("\"","")
+//        }
+
+        var image: String? = place.images?.let {
+            it.split(",")[0]
+                .replace("[","")
+                .replace("\\","")
+                .replace("\"","")
         }
         if (mContext != null) {
             Glide.with(mContext).load(image).into(holder.binding.ivPlace)
         }
         holder.binding.rBPlace.rating = place.rating!!.toFloat()
-        holder.binding.btnFavorite.setImageResource(setFavoriteIcon(place.favorite))
+        holder.binding.btnFavorite.setImageResource(setFavoriteIcon(favorite))
         holder.binding.btnFavorite.setOnClickListener {
-            holder.binding.btnFavorite.setImageResource(setFavoriteIcon(!place.favorite))
-            place.favorite = !place.favorite
+            holder.binding.btnFavorite.setImageResource(setFavoriteIcon(!favorite))
+            favorite = !favorite
+            place.favorite = if(place.favorite == "true") "false" else "true"
         }
 
         holder.itemView.setOnClickListener {

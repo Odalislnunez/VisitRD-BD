@@ -4,4 +4,4 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Comment (val id: Int, val place_code: Int, val comment: String, val user: String) : Parcelable
+data class Comment (val id: Int, val place_code: Int, val comment: String, val user_name: String) : Parcelable

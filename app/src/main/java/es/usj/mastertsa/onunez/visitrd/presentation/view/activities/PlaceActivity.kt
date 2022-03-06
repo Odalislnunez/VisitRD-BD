@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import es.usj.mastertsa.onunez.visitrd.R
+import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.presentation.view.fragments.PlaceFragment
 
 class PlaceActivity : AppCompatActivity() {
@@ -26,6 +27,10 @@ class PlaceActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_place)
 
+        val place = intent.getSerializableExtra("place") as Place
+
+        favorite = place.favorite == "true"
+
         if(savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
@@ -35,7 +40,7 @@ class PlaceActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item!!.itemId) {
+        when(item.itemId) {
             R.id.btnFavoritePlace -> {
                 favorite = !favorite
                 setFavoriteIcon(item)

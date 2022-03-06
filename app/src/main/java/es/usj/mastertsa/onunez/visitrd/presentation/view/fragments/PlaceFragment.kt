@@ -1,6 +1,7 @@
 package es.usj.mastertsa.onunez.visitrd.presentation.view.fragments
 
 import android.Manifest
+import android.bluetooth.le.AdvertiseData
 import android.content.Context
 import android.content.pm.PackageManager
 import android.location.Location
@@ -16,18 +17,24 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
+import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import es.usj.mastertsa.onunez.visitrd.R
 import es.usj.mastertsa.onunez.visitrd.databinding.FragmentPlaceBinding
+import es.usj.mastertsa.onunez.visitrd.domain.model.Comment
 import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.presentation.view.adapters.CommentAdapter
 import es.usj.mastertsa.onunez.visitrd.presentation.view.states.CommentState
 import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.CommentViewModel
 import es.usj.mastertsa.onunez.visitrd.presentation.viewmodel.CommentViewModelFactory
 import kotlinx.coroutines.flow.collect
+
+//const val ADD_TAG = "AddTag"
+const val ADD_COMMENT_REQUEST_KEY = "AddCommentRequestKey"
+const val COMMENT_KEY = "CommentKey"
 
 class PlaceFragment : Fragment() {
     private var lat: String = "40.4167754"
@@ -36,12 +43,13 @@ class PlaceFragment : Fragment() {
     private var locListener: LocationListener? = null
     private var favorite: Boolean = true
     lateinit var commentsAdapter: CommentAdapter
-    val commentViewModel: CommentViewModel by viewModels {
-        CommentViewModelFactory()
-    }
     var _binding: FragmentPlaceBinding? = null
     val binding: FragmentPlaceBinding get() = _binding!!
     lateinit var mContext: Context
+
+    val commentViewModel: CommentViewModel by viewModels {
+        CommentViewModelFactory(mContext)
+    }
 
     override fun onAttach(context: Context) {
         mContext = context
@@ -63,18 +71,32 @@ class PlaceFragment : Fragment() {
 
         val place = activity?.intent?.getSerializableExtra("place") as Place
 
-        for (i in place.images!![0].split(",")) {
-            val containerIv = CardView(mContext)
-            val iv = ImageView(mContext)
+        //FOR MANY IMAGES
+//        for (i in place.images!![0].split(",")) {
+//            val containerIv = CardView(mContext)
+//            val iv = ImageView(mContext)
+//
+//            Glide.with(this).load(i.replace("[","").replace("\\","").replace("\"",""))
+//                .into(iv)
+//
+//            iv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(550,550))
+//            containerIv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(600,600))
+//            containerIv.addView(iv)
+//            binding.llImages.addView(containerIv)
+//        }
+        val containerIv = CardView(mContext)
+        val iv = ImageView(mContext)
 
-            Glide.with(this).load(i.replace("[","").replace("\\","").replace("\"",""))
-                .into(iv)
+        Glide.with(this).load(place.images
+            .replace("[","")
+            .replace("\\","")
+            .replace("\"",""))
+            .into(iv)
 
-            iv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(550,550))
-            containerIv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(600,600))
-            containerIv.addView(iv)
-            binding.llImages.addView(containerIv)
-        }
+        iv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(550,550))
+        containerIv.layoutParams = LinearLayout.LayoutParams( LinearLayout.LayoutParams(600,600))
+        containerIv.addView(iv)
+        binding.llImages.addView(containerIv)
 
         binding.tvNameP.text = place.name
         binding.tvLocationP.text = place.location
@@ -82,9 +104,9 @@ class PlaceFragment : Fragment() {
         binding.tvDescription.text = place.description
         lat = place.latitude
         lon = place.longitude
-        favorite = place.favorite
+        favorite = place.favorite == "true"
 
-        commentsAdapter = CommentAdapter(place.code)
+        commentsAdapter = CommentAdapter()
 
         binding.rvComments.apply {
             adapter = commentsAdapter
@@ -97,9 +119,32 @@ class PlaceFragment : Fragment() {
             }
         }
 
-        commentViewModel.getData()
+        commentViewModel.getData(place.code)
+
+        binding.ibComment.setOnClickListener {
+            val comment = getData(place.code)
+            commentViewModel.addComment(comment)
+            binding.etComment.text = null
+
+            // FOR PASS A VALUE TO ANOTHER VIEW (PARENT ONE).
+//            val bundle = Bundle()
+//            bundle.putParcelable(COMMENT_KEY, comment)
+//            setFragmentResult(ADD_COMMENT_REQUEST_KEY, bundle)
+        }
+
+        // THIS CODE COMES TO THE ANOTHER VIEW, THE PARENT ONE, TO LISTEN THE VALUE
+//        childFragmentManager.setFragmentResultListener(ADD_COMMENT_REQUEST_KEY, viewLifecycleOwner) { _, bundle ->
+//            val comment: Comment? = bundle.getParcelable(COMMENT_KEY) as? Comment
+//            comment?.let { commentViewModel.addComment(it) }
+//        }
 
         gpsRecord()
+    }
+
+    private fun getData(placeCode: Int): Comment {
+        val commentDesc = binding.etComment.text.toString()
+
+        return Comment(id = System.currentTimeMillis().toInt(), place_code = placeCode, comment = commentDesc, user_name = "Lidy Nunez")
     }
 
     private fun setState(commentState: CommentState) {

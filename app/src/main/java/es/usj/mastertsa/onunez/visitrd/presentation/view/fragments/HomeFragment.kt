@@ -21,7 +21,7 @@ class HomeFragment : Fragment() {
     lateinit var mContext: Context
 
     val placeViewModel: PlaceViewModel by viewModels {
-        PlaceViewModelFactory()
+        PlaceViewModelFactory(mContext)
     }
 
     lateinit var placesAdapter: PlaceAdapter
@@ -43,6 +43,12 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // FOR TO CALL A FRAGMENT FROM A FRAGMENT IN A BUTTON.
+//        binding.addbutton.setOnClickListener {
+//            val addPlaceFragment = PlaceFragment()
+//            addPlaceFragment.show(childFragmentManager, ADD_TAG)
+//        }
 
         placesAdapter = PlaceAdapter(mContext)
 
