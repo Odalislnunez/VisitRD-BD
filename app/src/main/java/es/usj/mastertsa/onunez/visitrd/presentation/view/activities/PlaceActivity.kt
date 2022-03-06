@@ -14,7 +14,8 @@ import es.usj.mastertsa.onunez.visitrd.presentation.view.fragments.PlaceFragment
 class PlaceActivity : AppCompatActivity() {
     private var lat: String = "40.4167754"
     private var lon: String = "-3.7037901999999576"
-    private var favorite: Boolean = true
+    private lateinit var name: String
+    private var favorite: Boolean = false
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.place_menu, menu)
@@ -29,6 +30,9 @@ class PlaceActivity : AppCompatActivity() {
 
         val place = intent.getSerializableExtra("place") as Place
 
+        name = place.name
+        lat = place.latitude
+        lon = place.longitude
         favorite = place.favorite == "true"
 
         if(savedInstanceState == null) {
@@ -48,11 +52,11 @@ class PlaceActivity : AppCompatActivity() {
             R.id.btnShare -> {
                 val intent = Intent().apply {
                     action = Intent.ACTION_SEND
-                    putExtra(Intent.EXTRA_TEXT, "Prueba")
+                    putExtra(Intent.EXTRA_TEXT, name)
                     type = "text/plain"
                 }
 
-                val shareIntent = Intent.createChooser(intent, null)
+                val shareIntent = Intent.createChooser(intent, name)
                 startActivity(shareIntent)
             }
             R.id.btnVisit -> {

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import es.usj.mastertsa.onunez.visitrd.domain.model.Place
 import es.usj.mastertsa.onunez.visitrd.R
 import es.usj.mastertsa.onunez.visitrd.presentation.view.adapters.PlacesAdapter
+import es.usj.mastertsa.onunez.visitrd.presentation.view.fragments.FavoritesFragment
 import es.usj.mastertsa.onunez.visitrd.presentation.view.fragments.HomeFragment
 import java.util.ArrayList
 
@@ -40,10 +41,10 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.app_bar_favorites -> {
-//                supportFragmentManager
-//                    .beginTransaction()
-//                    .add(R.id.fragmentFavorites, FavoritesFragment())
-//                    .commit()
+                supportFragmentManager
+                    .beginTransaction()
+                    .add(R.id.fragmentFavorites, FavoritesFragment())
+                    .commit()
                 true
             }
             else -> super.onOptionsItemSelected(item)
