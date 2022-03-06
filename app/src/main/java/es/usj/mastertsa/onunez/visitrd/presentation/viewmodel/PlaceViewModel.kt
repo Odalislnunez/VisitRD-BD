@@ -10,6 +10,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class PlaceViewModel(
@@ -21,16 +22,16 @@ class PlaceViewModel(
     val homeStateFlow: StateFlow<PlaceState> = placesMutableStateFlow
 
     fun getData() {
-        viewModelScope.launch (Dispatchers.IO) {
-            val newPlaces = getPlaceUseCase.getPlaces()
-            placesMutableStateFlow.emit(PlaceState.Success(newPlaces))
+        viewModelScope.launch {
+            getPlaceUseCase.getPlaces().collect { placeList ->
+                placesMutableStateFlow.emit(PlaceState.Success(placeList))
+            }
         }
     }
 
     fun addPlace(place: Place) {
-        viewModelScope.launch (Dispatchers.IO) {
+        viewModelScope.launch {
             addPlaceUseCase.addPlace(place)
-            getData()
         }
     }
 }

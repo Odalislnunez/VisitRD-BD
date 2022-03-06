@@ -3,6 +3,7 @@ package es.usj.mastertsa.onunez.visitrd.data.repository
 import android.content.ContentValues
 import android.content.Context
 import android.provider.BaseColumns
+import android.util.Log
 import androidx.core.content.contentValuesOf
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -13,6 +14,8 @@ import es.usj.mastertsa.onunez.visitrd.domain.repository.PlaceRepository
 import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import es.usj.mastertsa.onunez.visitrd.data.repository.PlaceKey.timestamp
+import es.usj.mastertsa.onunez.visitrd.data.repository.room.PlaceDao
+import es.usj.mastertsa.onunez.visitrd.data.repository.room.PlaceDbModel
 import es.usj.mastertsa.onunez.visitrd.data.repository.site.CREATE_STATEMENT
 import es.usj.mastertsa.onunez.visitrd.data.repository.site.DELETE_PLACE
 import es.usj.mastertsa.onunez.visitrd.data.repository.site.PlaceContract.CommentsPlacesEntity.COLUMN_COMMENT
@@ -34,6 +37,7 @@ import es.usj.mastertsa.onunez.visitrd.data.repository.site.PlaceContract.PlaceE
 import es.usj.mastertsa.onunez.visitrd.data.repository.site.PlaceSqLiteHelper
 import es.usj.mastertsa.onunez.visitrd.domain.model.Comment
 import es.usj.mastertsa.onunez.visitrd.domain.model.Images
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 
@@ -52,7 +56,8 @@ object PlaceKey {
 class PlaceRepositoryImpl(
     private val dataStore: DataStore<Preferences>,
     private val placeSqLiteHelper: PlaceSqLiteHelper,
-    private val placeService: PlaceService
+    private val placeService: PlaceService,
+    private val placeDao: PlaceDao
 ): PlaceRepository {
     private val db = placeSqLiteHelper.writableDatabase
 
@@ -64,10 +69,8 @@ class PlaceRepositoryImpl(
         return System.currentTimeMillis() - timestamp > FIVE_DAYS
     }
 
-    override suspend fun getPlaces(): List<Place> {
+    override suspend fun getPlaces(): Flow<List<Place>> {
         if(shouldRefresh()){
-//            db.execSQL(DELETE_PLACE)
-//            db.execSQL(CREATE_STATEMENT)
             placeService.getPlaces().forEach { placeApiModel ->
                 val place = PlaceMapper.mapPlaceFromApiToDomain(placeApiModel)
                 addPlaces(place)
@@ -78,10 +81,15 @@ class PlaceRepositoryImpl(
             mutablePreferences[timestamp] = System.currentTimeMillis()
         }
 
-        val places = mutableListOf<Place>()
+        return placeDao.getPlaces().map { placeList ->
+            placeList.map { place -> PlaceMapper.mapPlaceFromDbToDomain(place) }
+        }
+
+        /*val places = mutableListOf<Place>()
 //        val images = mutableListOf<Images>()
 
         val cursor = db.rawQuery("SELECT * FROM $TABLE_NAME_PLACE", null)
+        Log.d("PLACE_REPOSITORY", Thread.currentThread().name)
 
         with(cursor) {
             while (moveToNext()) {
@@ -99,11 +107,14 @@ class PlaceRepositoryImpl(
             }
         }
 
-        return places
+        return places*/
     }
 
-    override fun addPlaces(place: Place) {
-        val placeContentValues = ContentValues()
+    override suspend fun addPlaces(place: Place) {
+        val placeToAdd = PlaceMapper.mapDbToDomainFromPlace(place)
+        placeDao.insertPlace(placeToAdd)
+
+        /*val placeContentValues = ContentValues()
         placeContentValues.put(BaseColumns._ID, place.code)
         placeContentValues.put(COLUMN_NAME, place.name)
         placeContentValues.put(COLUMN_LOCATION, place.location)
@@ -114,6 +125,6 @@ class PlaceRepositoryImpl(
         placeContentValues.put(COLUMN_RATING, place.rating)
         placeContentValues.put(COLUMN_FAVORITE , place.favorite)
 
-        db.insert(TABLE_NAME_PLACE, null, placeContentValues)
+        db.insert(TABLE_NAME_PLACE, null, placeContentValues)*/
     }
 }

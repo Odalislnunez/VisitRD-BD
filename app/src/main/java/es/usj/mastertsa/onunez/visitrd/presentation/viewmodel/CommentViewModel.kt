@@ -22,13 +22,15 @@ class CommentViewModel(
     fun getData(placeCode: Int) {
         viewModelScope.launch {
             delay(1000)
-            val newComments = getCommentUseCase.getComments(placeCode)
-            commentsMutableStateFlow.emit(CommentState.Success(newComments))
+            val newComments = getCommentUseCase.getComments(placeCode).collect { commentList ->
+                commentsMutableStateFlow.emit(CommentState.Success(commentList))
+            }
         }
     }
 
     fun addComment(comment: Comment){
-        addCommentUseCase.addComment(comment)
-        getData(comment.place_code)
+        viewModelScope.launch {
+            addCommentUseCase.addComment(comment)
+        }
     }
 }

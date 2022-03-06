@@ -35,7 +35,7 @@ object PlaceContract {
         val COLUMN_LONGITUDE = "longitude"
         val COLUMN_RATING = "rating"
         val COLUMN_FAVORITE = "favorite"
-        val TABLE_NAME_PLACE = "places"
+        const val TABLE_NAME_PLACE = "places"
     }
     object ImagesPlacesEntity: BaseColumns {
         val COLUMN_PLACE_CODE_I = "place_code"
@@ -46,7 +46,7 @@ object PlaceContract {
         val COLUMN_PLACE_CODE_C = "place_code"
         val COLUMN_COMMENT = "comment"
         val COLUMN_USER_NAME = "user_name"
-        val TABLE_NAME_COMMENTS = "comments_places"
+        const val TABLE_NAME_COMMENTS = "comments_places"
     }
 }
 

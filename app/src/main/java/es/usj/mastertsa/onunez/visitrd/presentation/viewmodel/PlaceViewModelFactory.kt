@@ -7,6 +7,7 @@ import es.usj.mastertsa.onunez.visitrd.data.repository.CommentRepositoryImpl
 import es.usj.mastertsa.onunez.visitrd.data.repository.PlaceRepositoryImpl
 import es.usj.mastertsa.onunez.visitrd.data.repository.api.PlaceService
 import es.usj.mastertsa.onunez.visitrd.data.repository.dataStore
+import es.usj.mastertsa.onunez.visitrd.data.repository.room.PlaceDatabase
 import es.usj.mastertsa.onunez.visitrd.data.repository.site.PlaceSqLiteHelper
 import es.usj.mastertsa.onunez.visitrd.domain.usecases.AddCommentUseCase
 import es.usj.mastertsa.onunez.visitrd.domain.usecases.AddPlaceUseCase
@@ -18,8 +19,9 @@ import kotlin.coroutines.coroutineContext
 
 class PlaceViewModelFactory(private val context: Context): ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        val placeDao = PlaceDatabase.getDatabase(context).getDaoPlace()
         val sqLiteHelper = PlaceSqLiteHelper(context)
-        val repository = PlaceRepositoryImpl(context.dataStore, sqLiteHelper, createService())
+        val repository = PlaceRepositoryImpl(context.dataStore, sqLiteHelper, createService(), placeDao)
         val getPlace = GetPlaceUseCase(repository)
         val addPlace = AddPlaceUseCase(repository)
         return  PlaceViewModel(getPlace, addPlace) as T
